@@ -1,26 +1,31 @@
 # Network Analysis Package
 
-A Python package for analyzing neural network structures and connection ratios.
+A comprehensive Python package for analyzing neural network structures and connection ratios, with advanced visualization capabilities.
 
-## Author
-
-Hua Cheng <trernghwhuare@aliyun.com>
+![Build Status](https://img.shields.io/github/actions/workflow/status/trernghwhuare/network-analysis-workflow/python-app.yml?branch=main)
+![License](https://img.shields.io/github/license/trernghwhuare/network-analysis-workflow)
+![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)
 
 ## Overview
 
-This package provides tools for analyzing neural networks, with a focus on:
+This package provides a robust set of tools for analyzing neural networks, with a focus on:
 
 1. Connection type distributions
 2. Correlation analysis between different metrics
 3. Excitatory/Inhibitory (E/I) ratio analysis
 4. Visualization of network properties
+5. Batch processing capabilities
+
+## Author
+
+Hua Cheng <trernghwhuare@aliyun.com>
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd network-analysis-package
+git clone https://github.com/trernghwhuare/network-analysis-workflow.git
+cd network-analysis-workflow
 
 # Install dependencies
 pip install -r requirements.txt
@@ -30,10 +35,10 @@ pip install -r requirements.txt
 
 ### Main Analysis Tools
 
-The package includes several analysis modules:
+The package includes several powerful analysis modules:
 
-1. **Connection Ratio Analysis** - Analyze E/I ratios in neural networks
-2. **Standard Analysis** - General network analysis and visualization
+1. **Connection Ratio Analysis** - Comprehensive analysis of E/I ratios in neural networks
+2. **Standard Analysis** - General network analysis and visualization tools
 
 ### Running Connection Ratio Analysis
 
@@ -101,19 +106,21 @@ The connection ratio analysis module provides:
 - Scatter plots with regression analysis
 - Distribution histograms for different ratio types
 - Batch processing of multiple networks
+- Detailed statistical analysis
 
 ### Standard Analysis Tools
 
 Standard analysis includes:
 
 - Connection type violin plots
-- Correlation heatmaps
+- Correlation heatmaps (clustered and combined views)
 - E/I scatter plots with stacked bars
+- Customizable visualization options
 - Batch processing capabilities
 
 ## Output
 
-The analysis tools generate several types of plots:
+The analysis tools generate several types of publication-quality plots:
 
 1. **Connection Ratio Plots**:
    - `{network}_regression.png` - Scatter plots with regression lines
@@ -125,6 +132,8 @@ The analysis tools generate several types of plots:
    - `{basename}_combined_heatmaps.png` - Side-by-side correlation heatmaps
    - `{basename}_ei_with_stacked.png` - E/I ratio scatter plots
 
+All plots are saved in the specified output directory with consistent naming conventions.
+
 ## Requirements
 
 - Python 3.6+
@@ -133,6 +142,8 @@ The analysis tools generate several types of plots:
 - Matplotlib
 - Seaborn
 - SciPy
+- scikit-learn (for clustering)
+- statsmodels (for statistical analysis)
 
 See `requirements.txt` for detailed version information.
 

@@ -14,7 +14,7 @@ setup(
     description="A package for analyzing neural network structures and connection ratios",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-username/network-analysis-package",
+    url="https://github.com/trernghwhuare/network-analysis-workflow",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
