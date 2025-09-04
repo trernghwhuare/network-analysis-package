@@ -84,6 +84,48 @@ python analysis.py --all
 python analysis.py --basename network_name
 ```
 
+## Sample Results
+
+### Connection Ratio Analysis Plots
+
+Example of a regression plot showing the relationship between overall E/I ratio and correlation:
+
+![Regression Plot](docs/images/sample_regression.png)
+
+Example of distribution histograms showing the spread of different ratio types:
+
+![Distribution Plot](docs/images/sample_distributions.png)
+
+### Standard Analysis Plots
+
+Example of connection type violin plots showing distributions of different connection types:
+
+![Violin Plots](docs/images/sample_violins.png)
+
+Example of clustered correlation heatmap showing relationships between metrics:
+
+![Clustered Heatmap](docs/images/sample_clustermap.png)
+
+Example of combined heatmaps showing correlation matrices:
+
+![Combined Heatmaps](docs/images/sample_combined_heatmaps.png)
+
+Example of E/I ratio scatter plot with stacked bars:
+
+![E/I Scatter Plot](docs/images/sample_ei_stacked.png)
+
+### Generating Sample Plots
+
+To generate sample plots for your own data:
+
+```bash
+# Generate sample plots with placeholder data
+python create_placeholder_images.py
+
+# Generate sample plots with real data
+python generate_sample_plots.py
+```
+
 ## Package Structure
 
 ```
