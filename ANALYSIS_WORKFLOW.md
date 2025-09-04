@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides instructions for using the analysis tools in the analysis.py script. The analysis workflow includes generating visualizations of network connection data.
+This document provides instructions for using the analysis tools in the analysis.py script and the connection ratio analysis tools. The analysis workflow includes generating visualizations of network connection data and analyzing E/I ratios.
 
 ## Available Analysis Tools
 
@@ -35,6 +35,17 @@ The `plot_ei_scatter_with_stacked` function creates scatter plots comparing vari
 - Stacked bar visualizations for population composition
 - Regression analysis with correlation coefficients
 
+### Connection Ratio Analysis (conn_ratio.py)
+
+The connection ratio analysis module provides functions for analyzing E/I ratios in neural networks:
+
+#### Connection Ratio Analysis
+The `analyze_connection_ratios` function analyzes connection ratios from JSON files:
+- Calculates overall, synaptic, and electrical E/I ratios
+- Generates scatter plots with regression lines
+- Creates distribution histograms for different ratio types
+- Supports multiple network analysis in a single run
+
 ## Running Analysis
 
 To run analysis on generated network data:
@@ -55,7 +66,17 @@ To run analysis on generated network data:
    python analysis.py
    ```
 
-3. Find the generated plots in the `analysis_out` directory
+3. Run the connection ratio analysis:
+   ```bash
+   python -m network_analysis_package.conn_ratio
+   ```
+   
+   Or using the demo workflow:
+   ```bash
+   python demo_workflow.py
+   ```
+
+4. Find the generated plots in the `plots` directory
 
 ## Output Files
 
@@ -65,6 +86,10 @@ To run analysis on generated network data:
 - `{basename}_combined_heatmaps.png`: Combined Spearman/Pearson heatmaps
 - `{basename}_ei_with_stacked.png`: E/I ratio scatter plots with stacked bars
 
+### From conn_ratio.py
+- `{network}_regression.png`: Scatter plots showing E/I relationships with regression lines
+- `{network}_ratio_distributions.png`: Histograms showing distributions of E/I ratios
+
 ## Analysis Workflow
 
 ### Data Loading
@@ -72,8 +97,11 @@ The analysis script loads data from CSV files in the analysis_out directory:
 - `{basename}_populations.csv`: Population statistics
 - `{basename}_summary.json`: Summary statistics
 
+The connection ratio analysis loads data from JSON files:
+- `{network}_connection_stats.json`: Connection statistics
+
 ### Processing Steps
-1. Load dataset using `load_dataset` function
+1. Load dataset using `load_dataset` function or from JSON files
 2. Generate visualizations using the plotting functions
 3. Save plots to the output directory
 4. Return results including regression statistics

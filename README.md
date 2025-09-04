@@ -1,95 +1,145 @@
 # Network Analysis Package
 
-This package provides tools for analyzing neural network structures and connections. It includes visualization functions for population statistics, correlation analysis, and other network metrics.
+A Python package for analyzing neural network structures and connection ratios.
 
-## Features
+## Author
 
-- Generate violin plots for different connection types
-- Create clustered correlation heatmaps
-- Produce scatter plots with stacked bars for E/I ratios
-- Analyze network centrality metrics
-- Batch process multiple network datasets
+Hua Cheng <trernghwhuare@aliyun.com>
+
+## Overview
+
+This package provides tools for analyzing neural networks, with a focus on:
+
+1. Connection type distributions
+2. Correlation analysis between different metrics
+3. Excitatory/Inhibitory (E/I) ratio analysis
+4. Visualization of network properties
 
 ## Installation
 
-To install this package, clone the repository and install with pip:
-
 ```bash
+# Clone the repository
 git clone <repository-url>
-cd network_analysis_package
-pip install -e .
-```
+cd network-analysis-package
 
-Or install directly from the source:
-
-```bash
-pip install .
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-### Command Line Interface
+### Main Analysis Tools
 
-Process all datasets in the analysis_out directory:
-```bash
-analyze-networks --all
-```
+The package includes several analysis modules:
 
-Process a specific dataset:
-```bash
-analyze-networks --basename network_name
-```
+1. **Connection Ratio Analysis** - Analyze E/I ratios in neural networks
+2. **Standard Analysis** - General network analysis and visualization
 
-### As a Module
+### Running Connection Ratio Analysis
 
 ```python
-from network_analysis_package.analysis import (
-    plot_connection_type_violins,
-    plot_clustered_heatmap,
-    plot_combined_heatmaps,
-    plot_ei_scatter_with_stacked
-)
+from network_analysis_package import conn_ratio
 
-# Use the functions directly in your code
+# Analyze connection ratios from JSON files
+results = conn_ratio.analyze_connection_ratios(
+    json_files=['analysis_out/network_connection_stats.json'],
+    plots_dir='plots'
+)
 ```
 
-## Functions
+Or run directly as a module:
+```bash
+python -m network_analysis_package.conn_ratio
+```
 
-### plot_connection_type_violins
-Creates violin plots showing distributions of different connection types:
-- Chemical connections (cont_out|cont_in)
-- Electrical connections (elec_out|elec_in) 
-- Input connections (exc_inputs|inh_inputs)
-- Can group by regions when available
-- Uses logarithmic scaling for better visualization of wide-ranging data
+### Running Standard Analysis
 
-### plot_clustered_heatmap
-Generates clustered correlation matrices:
-- Spearman or Pearson correlation clustering
-- Visual identification of metric redundancies
-- Handles non-finite values gracefully
+```python
+from network_analysis_package import analysis
 
-### plot_combined_heatmaps
-Generates side-by-side correlation heatmaps:
-- Compares Spearman and Pearson correlations
-- Visual comparison of different correlation methods
+# Plot connection type violins
+analysis.plot_connection_type_violins(dataframe, outpath='plots/violins.png')
 
-### plot_ei_scatter_with_stacked
-Creates scatter plots comparing various metrics:
-- E/I ratios and other connection metrics
-- Top N populations based on outgoing connections
-- Stacked bar visualizations for population composition
-- Regression analysis with correlation coefficients
+# Plot clustered heatmap
+analysis.plot_clustered_heatmap(dataframe, outpath='plots/clustermap.png')
+
+# Plot combined heatmaps
+analysis.plot_combined_heatmaps(dataframe, outpath='plots/combined.png')
+
+# Plot E/I scatter with stacked bars
+analysis.plot_ei_scatter_with_stacked(dataframe, outpath='plots/ei_stacked.png')
+```
+
+Or run the standard analysis script:
+```bash
+# Process all datasets in analysis_out directory
+python analysis.py --all
+
+# Process a specific dataset
+python analysis.py --basename network_name
+```
+
+## Package Structure
+
+```
+network_analysis_package/
+├── __init__.py
+├── conn_ratio.py          # Connection ratio analysis functionality
+├── analysis.py            # Standard analysis tools
+└── ...                    # Other modules
+```
+
+## Features
+
+### Connection Ratio Analysis
+
+The connection ratio analysis module provides:
+
+- Overall E/I ratio calculations
+- Synaptic E/I ratio calculations
+- Electrical E/I ratio calculations
+- Scatter plots with regression analysis
+- Distribution histograms for different ratio types
+- Batch processing of multiple networks
+
+### Standard Analysis Tools
+
+Standard analysis includes:
+
+- Connection type violin plots
+- Correlation heatmaps
+- E/I scatter plots with stacked bars
+- Batch processing capabilities
+
+## Output
+
+The analysis tools generate several types of plots:
+
+1. **Connection Ratio Plots**:
+   - `{network}_regression.png` - Scatter plots with regression lines
+   - `{network}_ratio_distributions.png` - Histograms of E/I ratios
+
+2. **Standard Analysis Plots**:
+   - `{basename}_summary_connection_violins.png` - Violin plots of connection types
+   - `{basename}_clustermap.png` - Clustered correlation heatmap
+   - `{basename}_combined_heatmaps.png` - Side-by-side correlation heatmaps
+   - `{basename}_ei_with_stacked.png` - E/I ratio scatter plots
 
 ## Requirements
 
-- Python 3.7+
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scipy
+- Python 3.6+
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- SciPy
+
+See `requirements.txt` for detailed version information.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Documentation
 
-See [ANALYSIS_WORKFLOW.md](ANALYSIS_WORKFLOW.md) for detailed documentation on the analysis workflow and function usage.
+See [ANALYSIS_WORKFLOW.md](ANALYSIS_WORKFLOW.md) for detailed documentation on the analysis workflow, function usage, and the new connection ratio analysis module.

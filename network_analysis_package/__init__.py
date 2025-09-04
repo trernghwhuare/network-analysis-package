@@ -2,26 +2,20 @@
 Network Analysis Package
 ========================
 
-A package for analyzing neural network structures and connections.
+A package for analyzing neural network structures and connection ratios.
 
-This package provides tools for:
-- Generating visualizations of network connection data
-- Computing centrality metrics
-- Performing statistical analysis and visualization
-- Comparing different network configurations
-
-Main functions:
-- plot_connection_type_violins: Creates violin plots for different connection types
-- plot_clustered_heatmap: Generates clustered correlation matrices
-- plot_combined_heatmaps: Creates side-by-side correlation heatmaps
-- plot_ei_scatter_with_stacked: Produces scatter plots with stacked bars for E/I ratios
-
-For command-line usage, run:
-    analyze-networks --help
+Modules:
+- conn_ratio: Connection ratio analysis functionality
+- analysis: General network analysis and visualization functions
 """
 
 __version__ = "0.1.0"
 __author__ = "Hua Cheng"
+
+from . import conn_ratio
+from . import analysis
+
+__all__ = ["conn_ratio", "analysis"]
 
 # Import main functions for easy access
 from .analysis import (
