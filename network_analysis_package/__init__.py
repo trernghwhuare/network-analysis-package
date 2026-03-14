@@ -15,8 +15,6 @@ __author__ = "Hua Cheng"
 from . import conn_ratio
 from . import analysis
 
-__all__ = ["conn_ratio", "analysis"]
-
 # Import main functions for easy access
 from .analysis import (
     plot_connection_type_violins,
@@ -24,14 +22,16 @@ from .analysis import (
     plot_combined_heatmaps,
     plot_ei_scatter_with_stacked,
     load_dataset,
-    process_multiple_datasets
+    find_available_datasets
 )
 
 __all__ = [
     "plot_connection_type_violins",
-    "plot_clustered_heatmap",
+    "plot_clustered_heatmap", 
     "plot_combined_heatmaps",
     "plot_ei_scatter_with_stacked",
     "load_dataset",
-    "process_multiple_datasets"
+    "find_available_datasets",
+    "conn_ratio",
+    "analysis"
 ]

@@ -1,0 +1,10 @@
+{
+  "network_name": "M2M1S1_max_plus_network",
+  "syn_ee_contacts": 20000,
+  "syn_ei_contacts": 17000,
+  "syn_ie_contacts": 14000,
+  "syn_ii_contacts": 12000,
+  "ele_ee_conductances": 3500,
+  "ele_ii_conductances": 3000,
+  "correlation": 0.91
+}

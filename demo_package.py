@@ -46,11 +46,16 @@ def test_conn_ratio_analysis():
         for network, ratios in results.items():
             print(f"    {network}:")
             for ratio_name, ratio_value in ratios.items():
-                print(f"      {ratio_name}: {ratio_value:.4f}")
+                if isinstance(ratio_value, (int, float)) and not (isinstance(ratio_value, float) and str(ratio_value).lower() in ['inf', '-inf', 'nan']):
+                    print(f"      {ratio_name}: {ratio_value:.4f}")
+                else:
+                    print(f"      {ratio_name}: {ratio_value}")
                 
         return True
     except Exception as e:
         print(f"✗ Connection ratio analysis failed: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 def test_standard_analysis():
@@ -59,15 +64,15 @@ def test_standard_analysis():
         from network_analysis_package import analysis
         import glob
         
-        # Create a simple DataFrame for testing
+        # Create a DataFrame with multiple data points for proper heatmap functionality
         data = {
-            'network': ['demo_network'],
-            'syn_ee_contacts': [15000],
-            'syn_ei_contacts': [12000],
-            'syn_ie_contacts': [10000],
-            'syn_ii_contacts': [8000],
-            'ele_ee_conductances': [2500],
-            'ele_ii_conductances': [2000]
+            'network': ['demo_network_A', 'demo_network_B', 'demo_network_C'],
+            'syn_ee_contacts': [15000, 16000, 14000],
+            'syn_ei_contacts': [12000, 13000, 11000],
+            'syn_ie_contacts': [10000, 11000, 9000],
+            'syn_ii_contacts': [8000, 9000, 7000],
+            'ele_ee_conductances': [2500, 2600, 2400],
+            'ele_ii_conductances': [2000, 2100, 1900]
         }
         
         df = pd.DataFrame(data)
@@ -89,6 +94,8 @@ def test_standard_analysis():
         return True
     except Exception as e:
         print(f"✗ Standard analysis failed: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 def main():

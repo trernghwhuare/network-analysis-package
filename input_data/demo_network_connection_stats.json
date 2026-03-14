@@ -1,5 +1,5 @@
 {
-  "network_name": "Demo_Network",
+  "network_name": "demo_network",
   "syn_ee_contacts": 15000,
   "syn_ei_contacts": 12000,
   "syn_ie_contacts": 10000,

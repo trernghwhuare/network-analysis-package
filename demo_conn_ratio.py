@@ -52,7 +52,10 @@ def run_analysis():
     for network, ratios in results.items():
         print(f"Network: {network}")
         for ratio_name, ratio_value in ratios.items():
-            print(f"  {ratio_name}: {ratio_value:.6f}")
+            if isinstance(ratio_value, (int, float)) and not (isinstance(ratio_value, float) and str(ratio_value).lower() in ['inf', '-inf', 'nan']):
+                print(f"  {ratio_name}: {ratio_value:.6f}")
+            else:
+                print(f"  {ratio_name}: {ratio_value}")
     
     print("\nCheck the 'plots' directory for generated visualizations:")
     print("1. {network}_regression.png - Scatter plots with regression lines")

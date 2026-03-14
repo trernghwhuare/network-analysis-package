@@ -4,7 +4,7 @@ A comprehensive Python package for analyzing neural network structures and conne
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/trernghwhuare/network-analysis-workflow/python-app.yml?branch=main)
 ![License](https://img.shields.io/github/license/trernghwhuare/network-analysis-workflow)
-![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)
+![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)
 
 ## Overview
 

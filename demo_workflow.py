@@ -92,11 +92,16 @@ def run_connection_ratio_analysis():
         for network, ratios in results.items():
             print(f"  {network}:")
             for ratio_name, ratio_value in ratios.items():
-                print(f"    {ratio_name}: {ratio_value:.4f}")
+                if isinstance(ratio_value, (int, float)) and not (isinstance(ratio_value, float) and str(ratio_value).lower() in ['inf', '-inf', 'nan']):
+                    print(f"    {ratio_name}: {ratio_value:.4f}")
+                else:
+                    print(f"    {ratio_name}: {ratio_value}")
                 
         return True
     except Exception as e:
         print(f"Error running connection ratio analysis: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 
@@ -155,6 +160,8 @@ def run_standard_analysis():
         return True
     except Exception as e:
         print(f"Error running standard analysis: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 

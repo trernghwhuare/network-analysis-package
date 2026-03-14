@@ -1,0 +1,10 @@
+{
+  "network_name": "M2M1S1_optimus_plus_network",
+  "syn_ee_contacts": 19000,
+  "syn_ei_contacts": 16000,
+  "syn_ie_contacts": 13000,
+  "syn_ii_contacts": 11000,
+  "ele_ee_conductances": 3200,
+  "ele_ii_conductances": 2800,
+  "correlation": 0.88
+}

@@ -82,7 +82,10 @@ def run_analysis():
         for network, ratios in results.items():
             print(f"\nNetwork: {network}")
             for ratio_name, ratio_value in ratios.items():
-                print(f"  {ratio_name}: {ratio_value:.6f}")
+                if isinstance(ratio_value, (int, float)) and not (isinstance(ratio_value, float) and str(ratio_value).lower() in ['inf', '-inf', 'nan']):
+                    print(f"  {ratio_name}: {ratio_value:.6f}")
+                else:
+                    print(f"  {ratio_name}: {ratio_value}")
         
         print("\nGenerated plots in 'plots' directory:")
         if os.path.exists("plots"):
@@ -99,6 +102,8 @@ def run_analysis():
         print("Make sure you're running this from the correct directory")
     except Exception as e:
         print(f"Error running analysis: {e}")
+        import traceback
+        traceback.print_exc()
 
 if __name__ == "__main__":
     run_analysis()

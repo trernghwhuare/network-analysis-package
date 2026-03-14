@@ -72,7 +72,10 @@ def run_complete_analysis():
     for network, ratios in conn_results.items():
         print(f"  {network}:")
         for ratio_name, ratio_value in ratios.items():
-            print(f"    {ratio_name}: {ratio_value:.4f}")
+            if isinstance(ratio_value, (int, float)) and not (isinstance(ratio_value, float) and str(ratio_value).lower() in ['inf', '-inf', 'nan']):
+                print(f"    {ratio_name}: {ratio_value:.4f}")
+            else:
+                print(f"    {ratio_name}: {ratio_value}")
     
     # 2. Prepare data for standard analysis
     print("\n2. Preparing data for Standard Analysis...")
