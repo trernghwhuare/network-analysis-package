@@ -1,0 +1,10 @@
+{
+  "network_name": "test_network",
+  "syn_ee_contacts": 10000,
+  "syn_ei_contacts": 8000,
+  "syn_ie_contacts": 7000,
+  "syn_ii_contacts": 6000,
+  "ele_ee_conductances": 1500,
+  "ele_ii_conductances": 1200,
+  "correlation": 0.75
+}
