@@ -116,21 +116,21 @@ network-analysis-workflow/
 └── README.md              # Documentation
 ```
 
-## Sample Results
+## Results plots
 
 ### Connection Ratio Analysis Plots
 
-Example of a regression plot showing the relationship between overall E/I ratio and correlation:
+Regression plot shows the relationship between overall E/I ratio and correlation:
 
-![Regression Plot](docs/images/sample_regression.png)
+![Regression Plot](output_plots/CTC_optimus_plus_network_regression.png)
 
-Example of distribution histograms showing the spread of different ratio types:
+Distribution histograms showing the spread of different ratio types:
 
-![Distribution Plot](docs/images/sample_distributions.png)
+![Distribution Plot](output_plots/CTC_max_plus_network_ratio_distributions.png)
 
 ### Standard Analysis Plots
 
-Example of connection type violin plots showing distributions of different connection types:
+Connection type violin plots showing distributions of different connection types:
 
 ![Violin Plots](docs/images/sample_violins.png)
 

@@ -1,0 +1,11 @@
+{
+  "network_name": "M2M1S1_optimus_plus_network",
+  "total_populations": 20,
+  "total_syn_ee": 19000,
+  "total_syn_ei": 16000,
+  "total_syn_ie": 13000,
+  "total_syn_ii": 11000,
+  "total_ele_ee": 3200,
+  "total_ele_ii": 2800,
+  "correlation": 0.88
+}

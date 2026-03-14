@@ -1,0 +1,11 @@
+{
+  "network_name": "M2M1S1_max_plus_network",
+  "total_populations": 20,
+  "total_syn_ee": 20000,
+  "total_syn_ei": 17000,
+  "total_syn_ie": 14000,
+  "total_syn_ii": 12000,
+  "total_ele_ee": 3500,
+  "total_ele_ii": 3000,
+  "correlation": 0.91
+}

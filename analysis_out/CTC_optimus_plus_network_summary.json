@@ -1,0 +1,11 @@
+{
+  "network_name": "CTC_optimus_plus_network",
+  "total_populations": 20,
+  "total_syn_ee": 16000,
+  "total_syn_ei": 14000,
+  "total_syn_ie": 11000,
+  "total_syn_ii": 9000,
+  "total_ele_ee": 2800,
+  "total_ele_ii": 2200,
+  "correlation": 0.82
+}

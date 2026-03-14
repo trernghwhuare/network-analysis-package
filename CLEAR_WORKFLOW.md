@@ -137,6 +137,7 @@ Ensure your project directory contains:
 ```
 network-analysis-workflow/
 ├── input_data/             # Place your JSON files here
+├── analysis_out/           # Population-level CSV data (auto-generated)
 ├── output_plots/           # Output directory (will be created automatically)
 └── network_analysis_package/  # Core analysis modules
 ```
@@ -213,7 +214,22 @@ pip install -r requirements.txt
 }
 ```
 
-### Step 3: Run Connection Ratio Analysis
+### Step 3: Generate Population-Level Data (NEW STEP)
+The standard analysis functions expect population-level CSV data in the `analysis_out/` directory. Run the population data generator:
+
+```bash
+python generate_population_data.py
+```
+
+This script will:
+- Read JSON files from `input_data/`
+- Generate synthetic population-level data that reflects the network statistics
+- Create the required CSV files in `analysis_out/`:
+  - `{network}_populations.csv`
+  - `{network}_population_stats.csv` 
+  - `{network}_summary.json`
+
+### Step 4: Run Connection Ratio Analysis
 Choose one of the following approaches:
 
 **Option A: Interactive Getting Started Script**
@@ -235,15 +251,15 @@ python run_conn_ratio.py
 python demo_conn_ratio.py
 ```
 
-### Step 4: Run Standard Analysis (Optional but Recommended)
-For comprehensive analysis, also run the standard analysis tools:
+### Step 5: Run Standard Analysis (NEW PROPER WORKFLOW)
+Use the dedicated standard analysis runner to process population-level data:
 
 ```bash
-# Process all datasets
-python analysis.py --all
+# Process all datasets with proper population-level analysis
+python run_standard_analysis.py
 
-# Process specific dataset
-python analysis.py --basename CTC_max_plus
+# Or run the complete demo workflow (includes both analyses)
+python demo_workflow.py
 ```
 
 ### Step 5: Generate Sample Plots (For Documentation/Demonstration)
@@ -310,10 +326,10 @@ analysis.plot_connection_type_violins(df, outpath='output_plots/custom_violins.p
 
 **Scientific value**: Allows comparison of how different connection modalities (chemical vs. electrical) contribute to overall E/I balance, revealing modality-specific imbalances.
 
-### Standard Analysis Plots
+### Standard Analysis Plots (NOW NETWORK-SPECIFIC!)
 
-#### 3. Connection Type Violin Plots (`{basename}_summary_connection_violins.png`)
-**What it shows**: Distribution characteristics of different connection types
+#### 3. Connection Type Violin Plots (`{network_name}_summary_connection_violins.png`)
+**What it shows**: Distribution characteristics of different connection types **within each network**
 - **Connection types displayed**:
   - Chemical outgoing connections (cont_out)
   - Chemical incoming connections (cont_in)  
@@ -324,14 +340,14 @@ analysis.plot_connection_type_violins(df, outpath='output_plots/custom_violins.p
 - **Features**:
   - Violin shapes showing full distribution (not just quartiles)
   - Logarithmic scaling for wide-ranging data
-  - Optional regional grouping for comparative analysis
   - Individual data points overlaid on violins
+  - **Network-specific analysis** (each plot shows one network's population distributions)
 
-**Scientific value**: Provides detailed insight into the variability and central tendencies of different connection types, revealing which connection modalities show the most heterogeneity.
+**Scientific value**: Provides detailed insight into the variability and central tendencies of different connection types **within individual networks**, revealing which connection modalities show the most heterogeneity at the population level.
 
-#### 4. Clustered Correlation Heatmap (`{basename}_clustermap.png`)
-**What it shows**: Correlation matrix with hierarchical clustering
-- **Matrix content**: Pairwise correlations between all network metrics
+#### 4. Clustered Correlation Heatmap (`{network_name}_clustermap.png`)
+**What it shows**: Correlation matrix with hierarchical clustering **for each network's populations**
+- **Matrix content**: Pairwise correlations between all network metrics **across populations within one network**
 - **Clustering**: Rows and columns reordered based on similarity
 - **Features**:
   - Color-coded correlation strength (-1 to +1)
@@ -339,10 +355,10 @@ analysis.plot_connection_type_violins(df, outpath='output_plots/custom_violins.p
   - Automatic handling of non-finite values
   - Spearman correlation by default (robust to outliers)
 
-**Scientific value**: Identifies groups of highly correlated metrics, revealing redundant measurements and highlighting key independent variables for further analysis.
+**Scientific value**: Identifies groups of highly correlated metrics **within individual networks**, revealing redundant measurements and highlighting key independent variables for further analysis at the population level.
 
-#### 5. Combined Correlation Heatmaps (`{basename}_combined_heatmaps.png`)
-**What it shows**: Side-by-side comparison of Spearman vs. Pearson correlations
+#### 5. Combined Correlation Heatmaps (`{network_name}_combined_heatmaps.png`)
+**What it shows**: Side-by-side comparison of Spearman vs. Pearson correlations **for each network**
 - **Left panel**: Spearman rank correlation (non-parametric)
 - **Right panel**: Pearson correlation (parametric)
 - **Features**:
@@ -351,19 +367,19 @@ analysis.plot_connection_type_violins(df, outpath='output_plots/custom_violins.p
   - Same color scale for easy comparison
   - Identical metric ordering for direct comparison
 
-**Scientific value**: Helps determine whether relationships are linear (similar Pearson/Spearman) or monotonic but non-linear (different Pearson/Spearman), guiding appropriate statistical interpretation.
+**Scientific value**: Helps determine whether relationships are linear (similar Pearson/Spearman) or monotonic but non-linear (different Pearson/Spearman) **within individual networks**, guiding appropriate statistical interpretation.
 
-#### 6. E/I Scatter Plots with Stacked Bars (`{basename}_ei_with_stacked.png`)
-**What it shows**: Multi-dimensional visualization combining scatter and bar plots
-- **Main scatter plot**: Various E/I metrics vs. other network properties
+#### 6. E/I Scatter Plots with Stacked Bars (`{network_name}_ei_with_stacked.png`)
+**What it shows**: Multi-dimensional visualization combining scatter and bar plots **for each network's populations**
+- **Main scatter plot**: Various E/I metrics vs. other network properties **across populations**
 - **Stacked bars**: Population composition breakdown
 - **Features**:
-  - Top N populations based on outgoing connections
-  - Stacked bar charts showing excitatory/inhibitory composition
+  - Individual populations as data points
+  - Stacked bar charts showing excitatory/inhibitory composition per population
   - Regression analysis with correlation coefficients
   - Multiple subplot arrangements for comprehensive view
 
-**Scientific value**: Integrates structural connectivity patterns with population-level E/I composition, revealing how macro-scale balance relates to micro-scale connection patterns.
+**Scientific value**: Integrates structural connectivity patterns with population-level E/I composition **within individual networks**, revealing how macro-scale balance relates to micro-scale connection patterns.
 
 ### Statistical Results Summary
 In addition to visual outputs, the analysis provides:
@@ -375,7 +391,7 @@ In addition to visual outputs, the analysis provides:
 ### File Naming Convention
 All output files follow consistent naming patterns:
 - **Connection Ratio**: `{network_identifier}_regression.png`, `{network_identifier}_ratio_distributions.png`
-- **Standard Analysis**: `{dataset_basename}_summary_connection_violins.png`, `{dataset_basename}_clustermap.png`, etc.
+- **Standard Analysis**: `{network_identifier}_summary_connection_violins.png`, `{network_identifier}_clustermap.png`, etc.
 - **Output Location**: All files saved in `output_plots/` directory with automatic creation if needed
 
 ### Plot Quality Specifications

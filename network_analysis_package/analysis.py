@@ -105,22 +105,37 @@ def plot_connection_type_violins(pop_stats_df,
         'ele_ee_conductances', 'ele_ii_conductances'
     ]
     
+    # Filter columns that exist in the dataframe
+    existing_cols = [col for col in cols if col in df.columns]
+    if not existing_cols:
+        # Try alternative column names for network-level data
+        alt_cols = ['cont_out', 'cont_in', 'elec_out', 'elec_in', 'exc_inputs', 'inh_inputs']
+        existing_cols = [col for col in alt_cols if col in df.columns]
+        if not existing_cols:
+            print(f"Warning: No valid connection columns found in DataFrame. Available columns: {list(df.columns)}")
+            return
+    
     # Apply log transformation if requested
-    plot_data = _maybe_log(df, cols, use_log)
+    plot_data = _maybe_log(df, existing_cols, use_log)
     
     # Create figure with subplots
-    fig, axes = plt.subplots(2, 3, figsize=(15, 10))
-    axes = axes.flatten()
+    n_cols = len(existing_cols)
+    n_rows = (n_cols + 2) // 3  # 3 columns per row
+    fig, axes = plt.subplots(n_rows, 3, figsize=(15, 5 * n_rows))
+    if n_rows == 1:
+        axes = [axes] if n_cols <= 3 else axes.flatten()
+    else:
+        axes = axes.flatten()
     
     # Plot each connection type
-    for i, col in enumerate(cols):
+    for i, col in enumerate(existing_cols):
         ax = axes[i]
         sns.violinplot(y=plot_data[col], ax=ax)
         ax.set_title(col.replace('_', ' ').title())
         ax.set_ylabel('Log(Connections)' if use_log else 'Connections')
     
     # Remove any unused subplots
-    for i in range(len(cols), len(axes)):
+    for i in range(len(existing_cols), len(axes)):
         fig.delaxes(axes[i])
     
     plt.tight_layout()
@@ -145,21 +160,33 @@ def plot_clustered_heatmap(pop_stats_df, cols=None, outpath="plots/clustermap.pn
       - use_log: whether to use log scale
       - basename: base name for the plot
     """
+    df = pop_stats_df.copy()
+    
     # Default columns if none provided
     if cols is None:
-        cols = [
+        default_cols = [
             'syn_ee_contacts', 'syn_ei_contacts', 'syn_ie_contacts', 'syn_ii_contacts',
             'ele_ee_conductances', 'ele_ii_conductances'
         ]
+        # Filter to only existing columns
+        cols = [col for col in default_cols if col in df.columns]
+        if not cols:
+            # Try alternative columns for network-level data
+            alt_cols = ['cont_out', 'cont_in', 'elec_out', 'elec_in', 'exc_inputs', 'inh_inputs']
+            cols = [col for col in alt_cols if col in df.columns]
+    
+    if not cols:
+        print(f"Warning: No valid columns found for heatmap. Available columns: {list(df.columns)}")
+        return
     
     # Apply log transformation if requested
-    plot_data = _maybe_log(pop_stats_df, cols, use_log)
+    plot_data = _maybe_log(df, cols, use_log)
     
     # Calculate correlation matrix
     corr_matrix = plot_data.corr()
     
     # Create clustered heatmap
-    plt.figure(figsize=(10, 8))
+    plt.figure(figsize=(max(8, len(cols) * 1.5), max(8, len(cols) * 1.5)))
     sns.clustermap(corr_matrix, annot=True, cmap='coolwarm', center=0, 
                    square=True, fmt='.2f')
     plt.title('Clustered Correlation Heatmap')
@@ -184,15 +211,27 @@ def plot_combined_heatmaps(pop_stats_df, cols=None, outpath="plots/combined_heat
       - use_log: whether to use log scale
       - basename: base name for the plot
     """
+    df = pop_stats_df.copy()
+    
     # Default columns if none provided
     if cols is None:
-        cols = [
+        default_cols = [
             'syn_ee_contacts', 'syn_ei_contacts', 'syn_ie_contacts', 'syn_ii_contacts',
             'ele_ee_conductances', 'ele_ii_conductances'
         ]
+        # Filter to only existing columns
+        cols = [col for col in default_cols if col in df.columns]
+        if not cols:
+            # Try alternative columns for network-level data
+            alt_cols = ['cont_out', 'cont_in', 'elec_out', 'elec_in', 'exc_inputs', 'inh_inputs']
+            cols = [col for col in alt_cols if col in df.columns]
+    
+    if not cols:
+        print(f"Warning: No valid columns found for heatmaps. Available columns: {list(df.columns)}")
+        return
     
     # Apply log transformation if requested
-    plot_data = _maybe_log(pop_stats_df, cols, use_log)
+    plot_data = _maybe_log(df, cols, use_log)
     
     # Calculate correlation matrix
     corr_matrix = plot_data.corr()
@@ -236,9 +275,22 @@ def plot_ei_scatter_with_stacked(pop_stats_df,
     """
     df = pop_stats_df.copy()
     
-    # Calculate E/I ratios
-    df['E_ratio'] = (df['syn_ee_contacts'] + df['syn_ie_contacts']) / (df['syn_ei_contacts'] + df['syn_ii_contacts'])
-    df['I_ratio'] = (df['syn_ei_contacts'] + df['syn_ii_contacts']) / (df['syn_ee_contacts'] + df['syn_ie_contacts'])
+    # Check which columns are available for E/I calculation
+    if all(col in df.columns for col in ['syn_ee_contacts', 'syn_ei_contacts', 'syn_ie_contacts', 'syn_ii_contacts']):
+        # Population-level data format
+        df['E_ratio'] = (df['syn_ee_contacts'] + df['syn_ie_contacts']) / (df['syn_ei_contacts'] + df['syn_ii_contacts'])
+        df['I_ratio'] = (df['syn_ei_contacts'] + df['syn_ii_contacts']) / (df['syn_ee_contacts'] + df['syn_ie_contacts'])
+    elif all(col in df.columns for col in ['exc_inputs', 'inh_inputs']):
+        # Network-level data format
+        df['E_ratio'] = df['exc_inputs'] / df['inh_inputs']
+        df['I_ratio'] = df['inh_inputs'] / df['exc_inputs']
+    else:
+        print(f"Warning: Cannot calculate E/I ratios. Available columns: {list(df.columns)}")
+        return
+    
+    # Handle infinite values
+    df['E_ratio'] = df['E_ratio'].replace([np.inf, -np.inf], np.nan).fillna(0)
+    df['I_ratio'] = df['I_ratio'].replace([np.inf, -np.inf], np.nan).fillna(0)
     
     # Apply log transformation if requested
     plot_cols = ['E_ratio', 'I_ratio']
@@ -252,9 +304,9 @@ def plot_ei_scatter_with_stacked(pop_stats_df,
     ax.bar(x, plot_data['E_ratio'], label='E Ratio', alpha=0.7)
     ax.bar(x, plot_data['I_ratio'], bottom=plot_data['E_ratio'], label='I Ratio', alpha=0.7)
     
-    ax.set_xlabel('Network')
+    ax.set_xlabel('Population/Network')
     ax.set_ylabel('Log(Ratio)' if use_log else 'Ratio')
-    ax.set_title('E/I Ratios Across Networks')
+    ax.set_title('E/I Ratios Across Populations/Networks')
     ax.legend()
     
     # Set x-axis labels

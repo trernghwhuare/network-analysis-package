@@ -11,6 +11,7 @@ import os
 import json
 from pathlib import Path
 
+
 def create_sample_data():
     """Create sample network data for demonstration."""
     # Create input_data directory for input files
@@ -106,58 +107,28 @@ def run_connection_ratio_analysis():
 
 
 def run_standard_analysis():
-    """Run standard analysis on sample data."""
-    print("\nRunning Standard Analysis...")
+    """Run standard analysis using proper population-level data workflow."""
+    print("\nRunning Standard Analysis (Population-Level Data)...")
     try:
-        from network_analysis_package import analysis
-        import pandas as pd
-        import glob
-        import json
+        # Import the new standard analysis runner
+        from run_standard_analysis import run_all_standard_analyses
         
-        # Find all JSON files in input_data directory
-        json_files = glob.glob("input_data/*_connection_stats.json")
-        
-        if not json_files:
-            print("No JSON files found in input_data/")
+        # First ensure we have population data
+        from generate_population_data import generate_analysis_out_data
+        if not generate_analysis_out_data():
+            print("Failed to generate population data for standard analysis.")
             return False
+        
+        # Run standard analysis on all datasets
+        success = run_all_standard_analyses(indir="analysis_out", outdir="output_plots")
+        
+        if success:
+            print("  ✓ Standard analysis completed successfully!")
+            print("  Check output_plots/ for network-specific violin plots and heatmaps")
+        else:
+            print("  ✗ Standard analysis failed")
             
-        # Load data into DataFrame
-        data_records = []
-        for filename in json_files:
-            with open(filename, 'r') as f:
-                data = json.load(f)
-                record = {
-                    'network': data['network_name'],
-                    'syn_ee_contacts': data['syn_ee_contacts'],
-                    'syn_ei_contacts': data['syn_ei_contacts'],
-                    'syn_ie_contacts': data['syn_ie_contacts'],
-                    'syn_ii_contacts': data['syn_ii_contacts'],
-                    'ele_ee_conductances': data['ele_ee_conductances'],
-                    'ele_ii_conductances': data['ele_ii_conductances'],
-                    'correlation': data['correlation']
-                }
-                data_records.append(record)
-        
-        df = pd.DataFrame(data_records)
-        df.set_index('network', inplace=True)
-        
-        # Create output directory for plots
-        os.makedirs("output_plots", exist_ok=True)
-        
-        # Run analysis functions
-        analysis.plot_connection_type_violins(df, outpath="output_plots/connection_violins.png")
-        print("  Created connection violins plot")
-        
-        analysis.plot_clustered_heatmap(df, outpath="output_plots/clustermap.png")
-        print("  Created clustered heatmap")
-        
-        analysis.plot_combined_heatmaps(df, outpath="output_plots/combined_heatmaps.png")
-        print("  Created combined heatmaps")
-        
-        analysis.plot_ei_scatter_with_stacked(df, outpath="output_plots/ei_stacked.png")
-        print("  Created E/I scatter with stacked bars")
-        
-        return True
+        return success
     except Exception as e:
         print(f"Error running standard analysis: {e}")
         import traceback
@@ -187,7 +158,12 @@ def main():
     
     if conn_ratio_success and standard_analysis_success:
         print("\nAll analyses completed successfully!")
-        print("Check the 'output_plots' directory for generated visualizations.")
+        print("Check the 'output_plots' directory for generated visualizations:")
+        print("  • Network-specific regression plots (from connection ratio analysis)")
+        print("  • Network-specific violin plots (from standard analysis)")
+        print("  • Network-specific clustermaps (from standard analysis)")
+        print("  • Network-specific combined heatmaps (from standard analysis)")
+        print("  • Network-specific E/I scatter plots (from standard analysis)")
     else:
         print("\nSome analyses failed. Please check the error messages above.")
 
