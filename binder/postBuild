@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Install system dependencies
+apt-get update
+apt-get install -y build-essential autoconf automake libtool libx11-dev libxext-dev libxmu-dev libgl1-mesa-dev libncurses5-dev bison flex
+
+# Install NEURON from source (required for this project)
+cd /tmp
+git clone https://github.com/neuronsimulator/nrn.git
+cd nrn
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/opt/nrn -DNRN_ENABLE_INTERVIEWS=OFF -DNRN_ENABLE_RX3R=OFF -DNRN_ENABLE_PYTHON=ON -DPYTHON_EXECUTABLE=$(which python)
+make -j4
+make install
+
+# Add NEURON to PATH
+echo 'export PATH="/opt/nrn/bin:$PATH"' >> $HOME/.bashrc
+echo 'export NEURON_HOME="/opt/nrn"' >> $HOME/.bashrc
+
+# Install pyNeuroML dependencies
+pip install lxml beautifulsoup4
+
+# Make scripts executable
+chmod +x /home/jovyan/*.py
