@@ -1,0 +1,30 @@
+{
+    "L1": {
+        "No. of neurons per electrical types": {
+            "cSTUT189": 150,
+            "cACint209": 300,
+            "cNAC187": 900,
+            "bNAC219": 600,
+            "cIR216": 150
+        },
+        "number of intralaminar pathways": 3150,
+        "total axonal volume": 1575000.0,
+        "No. of possible pathways": 4200,
+        "number of inhibitory pathways": 1200,
+        "No. of neurons per morphological types": {
+            "NGCDA": 600,
+            "SLAC": 450,
+            "DAC": 300,
+            "HAC": 450,
+            "NGCSA": 150,
+            "DLAC": 150
+        },
+        "number of excitatory pathways": 2700,
+        "total axonal length": 7350000.0,
+        "total dendritic volume": 1155000.0,
+        "total dendritic length": 4620000.0,
+        "number of viable pathways": 2520,
+        "number of interlaminar pathways": 630,
+        "synapse density": 14700000.0
+    }
+}

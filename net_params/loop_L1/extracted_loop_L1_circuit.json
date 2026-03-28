@@ -1,0 +1,45 @@
+{
+    "No. of s-types": 6,
+    "Layer thicknesses": {
+        "L1": 165,
+        "L23": 502,
+        "L4": 190,
+        "L5": 525,
+        "L6": 700,
+        "TCs_core": 100,
+        "TCs_matric": 50,
+        "TCs_intralaminar": 25
+    },
+    "No. of electrical types": 5,
+    "Microcircuit volume": 0.02,
+    "No. of unique types of synaptic connections between me-types": 900,
+    "Neuron densities": {
+        "L1": 2100,
+        "L23": 0,
+        "L4": 0,
+        "L5": 0,
+        "L6": 0,
+        "TCs_core": 0,
+        "TCs_matric": 0,
+        "TCs_intralaminar": 0
+    },
+    "No. of neurons per layer": {
+        "L1": 2100,
+        "L23": 0,
+        "L4": 0,
+        "L5": 0,
+        "L6": 0,
+        "TCs_core": 0,
+        "TCs_matric": 0,
+        "TCs_intralaminar": 0
+    },
+    "No. of morphological types": 6,
+    "No. of intrinsic synapses": 117600,
+    "No. of layers": 9,
+    "No. of extrinsic connections": 0,
+    "No. of unique types of synaptic connections between m-types": 36,
+    "No. of extrinsic synapses": 0,
+    "No. of intrinsic connections": 2240,
+    "No. of morphoelectrical types": 30,
+    "No. of neurons": 2100
+}

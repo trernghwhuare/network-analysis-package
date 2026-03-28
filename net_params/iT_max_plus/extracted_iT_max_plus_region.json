@@ -1,0 +1,38 @@
+{
+    "iT_max_plus": {
+        "No. of neurons per electrical types": {
+            "TCR": 6000,
+            "TCRm": 4000,
+            "nRTm": 4000,
+            "nRTil": 2000,
+            "TCRc": 4000,
+            "nRTc": 4000,
+            "TCRil": 2000,
+            "nRT": 6000
+        },
+        "number of intralaminar pathways": 48000,
+        "total axonal volume": 24000000.0,
+        "No. of possible pathways": 64000,
+        "number of inhibitory pathways": 36000,
+        "No. of neurons per morphological types": {
+            "TCR": 6000,
+            "TCRm": 4000,
+            "nRTm": 4000,
+            "nRTil": 2000,
+            "TCRc": 4000,
+            "nRTc": 4000,
+            "TCRil": 2000,
+            "nRT": 6000
+        },
+        "number of excitatory pathways": 25200,
+        "total axonal length": 112000000.0,
+        "total dendritic volume": 17600000.0,
+        "total dendritic length": 70400000.0,
+        "number of viable pathways": 38400,
+        "number of interlaminar pathways": 9600,
+        "synapse density": 224000000.0,
+        "total_neurons": 32000,
+        "excitatory_neurons": 14000,
+        "inhibitory_neurons": 18000
+    }
+}

@@ -1,0 +1,6 @@
+*.nml filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
+net_files/** filter=lfs diff=lfs merge=lfs -text
+cell_sim/** filter=lfs diff=lfs merge=lfs -text
+analysis_out/** filter=lfs diff=lfs merge=lfs -text
+_build/** filter=lfs diff=lfs merge=lfs -text

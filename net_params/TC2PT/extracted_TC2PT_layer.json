@@ -1,0 +1,148 @@
+{
+    "L23": {
+        "No. of neurons per electrical types": {
+            "cADpyr229": 180
+        },
+        "number of intralaminar pathways": 270,
+        "total axonal volume": 135000.0,
+        "No. of possible pathways": 360,
+        "number of inhibitory pathways": 0,
+        "No. of neurons per morphological types": {
+            "PC": 180
+        },
+        "number of excitatory pathways": 324,
+        "total axonal length": 630000.0,
+        "total dendritic volume": 99000.0,
+        "total dendritic length": 396000.0,
+        "number of viable pathways": 216,
+        "number of interlaminar pathways": 54,
+        "synapse density": 1260000.0
+    },
+    "L4": {
+        "No. of neurons per electrical types": {
+            "cADpyr230": 315,
+            "cADpyr231": 260
+        },
+        "number of intralaminar pathways": 862,
+        "total axonal volume": 431250.0,
+        "No. of possible pathways": 1150,
+        "number of inhibitory pathways": 0,
+        "No. of neurons per morphological types": {
+            "PC": 105,
+            "SP": 105,
+            "SS": 105,
+            "TPC": 260
+        },
+        "number of excitatory pathways": 1035,
+        "total axonal length": 2012500.0,
+        "total dendritic volume": 316250.0,
+        "total dendritic length": 1265000.0,
+        "number of viable pathways": 690,
+        "number of interlaminar pathways": 172,
+        "synapse density": 4025000.0
+    },
+    "L5": {
+        "No. of neurons per electrical types": {
+            "cADpyr232": 500
+        },
+        "number of intralaminar pathways": 750,
+        "total axonal volume": 375000.0,
+        "No. of possible pathways": 1000,
+        "number of inhibitory pathways": 0,
+        "No. of neurons per morphological types": {
+            "STPC": 125,
+            "TTPC1": 125,
+            "TTPC2": 125,
+            "UTPC": 125
+        },
+        "number of excitatory pathways": 900,
+        "total axonal length": 1750000.0,
+        "total dendritic volume": 275000.0,
+        "total dendritic length": 1100000.0,
+        "number of viable pathways": 600,
+        "number of interlaminar pathways": 150,
+        "synapse density": 3500000.0
+    },
+    "L6": {
+        "No. of neurons per electrical types": {
+            "cADpyr231": 780
+        },
+        "number of intralaminar pathways": 1170,
+        "total axonal volume": 585000.0,
+        "No. of possible pathways": 1560,
+        "number of inhibitory pathways": 0,
+        "No. of neurons per morphological types": {
+            "BPC": 260,
+            "IPC": 260,
+            "UTPC": 260
+        },
+        "number of excitatory pathways": 1404,
+        "total axonal length": 2730000.0,
+        "total dendritic volume": 429000.0,
+        "total dendritic length": 1716000.0,
+        "number of viable pathways": 936,
+        "number of interlaminar pathways": 234,
+        "synapse density": 5460000.0
+    },
+    "L1": {
+        "No. of neurons per electrical types": {
+            "cADpyr231": 260
+        },
+        "number of intralaminar pathways": 390,
+        "total axonal volume": 195000.0,
+        "No. of possible pathways": 520,
+        "number of inhibitory pathways": 0,
+        "No. of neurons per morphological types": {
+            "TPC": 260
+        },
+        "number of excitatory pathways": 468,
+        "total axonal length": 910000.0,
+        "total dendritic volume": 143000.0,
+        "total dendritic length": 572000.0,
+        "number of viable pathways": 312,
+        "number of interlaminar pathways": 78,
+        "synapse density": 1820000.0
+    },
+    "TCs_matrix": {
+        "No. of neurons per electrical types": {
+            "TCRm": 4000,
+            "nRTm": 4000
+        },
+        "number of intralaminar pathways": 12000,
+        "total axonal volume": 6000000.0,
+        "No. of possible pathways": 16000,
+        "number of inhibitory pathways": 0,
+        "No. of neurons per morphological types": {
+            "TCRm": 4000,
+            "nRTm": 4000
+        },
+        "number of excitatory pathways": 14400,
+        "total axonal length": 28000000.0,
+        "total dendritic volume": 4400000.0,
+        "total dendritic length": 17600000.0,
+        "number of viable pathways": 9600,
+        "number of interlaminar pathways": 2400,
+        "synapse density": 56000000.0
+    },
+    "TCs_intralaminar": {
+        "No. of neurons per electrical types": {
+            "TCRil": 2000,
+            "nRTil": 2000
+        },
+        "number of intralaminar pathways": 6000,
+        "total axonal volume": 3000000.0,
+        "No. of possible pathways": 8000,
+        "number of inhibitory pathways": 8000,
+        "No. of neurons per morphological types": {
+            "TCRil": 2000,
+            "nRTil": 2000
+        },
+        "number of excitatory pathways": 0,
+        "total axonal length": 14000000.0,
+        "total dendritic volume": 2200000.0,
+        "total dendritic length": 8800000.0,
+        "number of viable pathways": 4800,
+        "number of interlaminar pathways": 1200,
+        "synapse density": 28000000.0
+    }
+}

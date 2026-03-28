@@ -1,0 +1,46 @@
+{
+    "TC2PT": {
+        "No. of neurons per electrical types": {
+            "cADpyr229": 180,
+            "cADpyr230": 315,
+            "cADpyr232": 500,
+            "cADpyr231": 1300,
+            "TCR": 6000,
+            "TCRm": 4000,
+            "nRTm": 4000,
+            "TCRil": 2000,
+            "nRTil": 2000
+        },
+        "number of intralaminar pathways": 30442,
+        "total axonal volume": 15221250.0,
+        "No. of possible pathways": 40590,
+        "number of inhibitory pathways": 8000,
+        "No. of neurons per morphological types": {
+            "PC": 285,
+            "SP": 105,
+            "SS": 105,
+            "STPC": 125,
+            "TTPC1": 125,
+            "TTPC2": 125,
+            "UTPC": 385,
+            "BPC": 260,
+            "IPC": 260,
+            "TPC": 520,
+            "TCR": 6000,
+            "TCRm": 4000,
+            "nRTm": 4000,
+            "TCRil": 2000,
+            "nRTil": 2000
+        },
+        "number of excitatory pathways": 29331,
+        "total axonal length": 71032500.0,
+        "total dendritic volume": 11162250.0,
+        "total dendritic length": 44649000.0,
+        "number of viable pathways": 24354,
+        "number of interlaminar pathways": 6088,
+        "synapse density": 142065000.0,
+        "total_neurons": 20295,
+        "excitatory_neurons": 16295,
+        "inhibitory_neurons": 4000
+    }
+}

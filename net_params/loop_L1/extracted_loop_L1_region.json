@@ -1,0 +1,188 @@
+{
+    "M2b": {
+        "No. of neurons per electrical types": {
+            "cSTUT189": 25,
+            "cNAC187": 150,
+            "bNAC219": 100,
+            "cACint209": 50,
+            "cIR216": 25
+        },
+        "number of intralaminar pathways": 525,
+        "total axonal volume": 262500.0,
+        "No. of possible pathways": 700,
+        "number of inhibitory pathways": 200,
+        "No. of neurons per morphological types": {
+            "NGCDA": 100,
+            "DAC": 50,
+            "HAC": 75,
+            "SLAC": 75,
+            "NGCSA": 25,
+            "DLAC": 25
+        },
+        "number of excitatory pathways": 450,
+        "total axonal length": 1225000.0,
+        "total dendritic volume": 192500.0,
+        "total dendritic length": 770000.0,
+        "number of viable pathways": 420,
+        "number of interlaminar pathways": 105,
+        "synapse density": 2450000.0,
+        "total_neurons": 350,
+        "excitatory_neurons": 250,
+        "inhibitory_neurons": 100
+    },
+    "S1b": {
+        "No. of neurons per electrical types": {
+            "cACint209": 50,
+            "cSTUT189": 25,
+            "cNAC187": 150,
+            "bNAC219": 100,
+            "cIR216": 25
+        },
+        "number of intralaminar pathways": 525,
+        "total axonal volume": 262500.0,
+        "No. of possible pathways": 700,
+        "number of inhibitory pathways": 200,
+        "No. of neurons per morphological types": {
+            "SLAC": 75,
+            "NGCDA": 100,
+            "DAC": 50,
+            "HAC": 75,
+            "DLAC": 25,
+            "NGCSA": 25
+        },
+        "number of excitatory pathways": 450,
+        "total axonal length": 1225000.0,
+        "total dendritic volume": 192500.0,
+        "total dendritic length": 770000.0,
+        "number of viable pathways": 420,
+        "number of interlaminar pathways": 105,
+        "synapse density": 2450000.0,
+        "total_neurons": 350,
+        "excitatory_neurons": 250,
+        "inhibitory_neurons": 100
+    },
+    "S1a": {
+        "No. of neurons per electrical types": {
+            "bNAC219": 100,
+            "cNAC187": 150,
+            "cSTUT189": 25,
+            "cACint209": 50,
+            "cIR216": 25
+        },
+        "number of intralaminar pathways": 525,
+        "total axonal volume": 262500.0,
+        "No. of possible pathways": 700,
+        "number of inhibitory pathways": 200,
+        "No. of neurons per morphological types": {
+            "NGCDA": 100,
+            "DAC": 50,
+            "SLAC": 75,
+            "HAC": 75,
+            "DLAC": 25,
+            "NGCSA": 25
+        },
+        "number of excitatory pathways": 450,
+        "total axonal length": 1225000.0,
+        "total dendritic volume": 192500.0,
+        "total dendritic length": 770000.0,
+        "number of viable pathways": 420,
+        "number of interlaminar pathways": 105,
+        "synapse density": 2450000.0,
+        "total_neurons": 350,
+        "excitatory_neurons": 250,
+        "inhibitory_neurons": 100
+    },
+    "M1a": {
+        "No. of neurons per electrical types": {
+            "bNAC219": 100,
+            "cACint209": 50,
+            "cNAC187": 150,
+            "cSTUT189": 25,
+            "cIR216": 25
+        },
+        "number of intralaminar pathways": 525,
+        "total axonal volume": 262500.0,
+        "No. of possible pathways": 700,
+        "number of inhibitory pathways": 200,
+        "No. of neurons per morphological types": {
+            "NGCDA": 100,
+            "SLAC": 75,
+            "DAC": 50,
+            "HAC": 75,
+            "NGCSA": 25,
+            "DLAC": 25
+        },
+        "number of excitatory pathways": 450,
+        "total axonal length": 1225000.0,
+        "total dendritic volume": 192500.0,
+        "total dendritic length": 770000.0,
+        "number of viable pathways": 420,
+        "number of interlaminar pathways": 105,
+        "synapse density": 2450000.0,
+        "total_neurons": 350,
+        "excitatory_neurons": 250,
+        "inhibitory_neurons": 100
+    },
+    "M1b": {
+        "No. of neurons per electrical types": {
+            "cNAC187": 150,
+            "cSTUT189": 25,
+            "bNAC219": 100,
+            "cACint209": 50,
+            "cIR216": 25
+        },
+        "number of intralaminar pathways": 525,
+        "total axonal volume": 262500.0,
+        "No. of possible pathways": 700,
+        "number of inhibitory pathways": 200,
+        "No. of neurons per morphological types": {
+            "NGCDA": 100,
+            "DAC": 50,
+            "HAC": 75,
+            "SLAC": 75,
+            "NGCSA": 25,
+            "DLAC": 25
+        },
+        "number of excitatory pathways": 450,
+        "total axonal length": 1225000.0,
+        "total dendritic volume": 192500.0,
+        "total dendritic length": 770000.0,
+        "number of viable pathways": 420,
+        "number of interlaminar pathways": 105,
+        "synapse density": 2450000.0,
+        "total_neurons": 350,
+        "excitatory_neurons": 250,
+        "inhibitory_neurons": 100
+    },
+    "M2a": {
+        "No. of neurons per electrical types": {
+            "cACint209": 50,
+            "cNAC187": 150,
+            "cSTUT189": 25,
+            "bNAC219": 100,
+            "cIR216": 25
+        },
+        "number of intralaminar pathways": 525,
+        "total axonal volume": 262500.0,
+        "No. of possible pathways": 700,
+        "number of inhibitory pathways": 200,
+        "No. of neurons per morphological types": {
+            "SLAC": 75,
+            "NGCDA": 100,
+            "DAC": 50,
+            "HAC": 75,
+            "NGCSA": 25,
+            "DLAC": 25
+        },
+        "number of excitatory pathways": 450,
+        "total axonal length": 1225000.0,
+        "total dendritic volume": 192500.0,
+        "total dendritic length": 770000.0,
+        "number of viable pathways": 420,
+        "number of interlaminar pathways": 105,
+        "synapse density": 2450000.0,
+        "total_neurons": 350,
+        "excitatory_neurons": 250,
+        "inhibitory_neurons": 100
+    }
+}

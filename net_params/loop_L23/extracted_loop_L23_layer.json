@@ -1,0 +1,39 @@
+{
+    "L23": {
+        "No. of neurons per electrical types": {
+            "bAC217": 6480,
+            "bIR215": 3240,
+            "bNAC219": 8640,
+            "cACint209": 9720,
+            "cADpyr229": 1080,
+            "cIR216": 1080,
+            "cNAC187": 7560,
+            "cSTUT189": 2160,
+            "dNAC222": 5400,
+            "dSTUT214": 1080
+        },
+        "number of intralaminar pathways": 69660,
+        "total axonal volume": 34830000.0,
+        "No. of possible pathways": 92880,
+        "number of inhibitory pathways": 49680,
+        "No. of neurons per morphological types": {
+            "MC": 5400,
+            "BP": 6480,
+            "NBC": 6480,
+            "DBC": 4320,
+            "LBC": 6480,
+            "BTC": 5400,
+            "NGC": 4320,
+            "SBC": 3240,
+            "ChC": 3240,
+            "PC": 1080
+        },
+        "number of excitatory pathways": 38880,
+        "total axonal length": 162540000.0,
+        "total dendritic volume": 25542000.0,
+        "total dendritic length": 102168000.0,
+        "number of viable pathways": 55728,
+        "number of interlaminar pathways": 13932,
+        "synapse density": 325080000.0
+    }
+}

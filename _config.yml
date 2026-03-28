@@ -1,0 +1,37 @@
+# Book settings
+title: Comprehensive Pipeline for Large-Scale Neuronal Network Construction and Analysis
+author: Hua Cheng
+copyright: "2026"
+
+# Force re-execution of notebooks on each build
+execute:
+  execute_notebooks: force
+
+# HTML-specific settings
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: true
+
+# Launch button settings
+launch_buttons:
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+  deepnote_url: "https://deepnote.com"
+
+# Repository settings
+repository:
+  url: https://github.com/trernghwhuare/network-analysis-package
+  path_to_book: .
+  branch: main
+
+# Parse markdown files as MyST Markdown
+parse:
+  myst_enable_extensions:
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution

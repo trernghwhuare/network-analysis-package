@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files
+*.h5
+*.nwb
+*.mat
+*.npz
+
+# Compiled files
+*.so
+*.dll
+*.dylib
+
+# NEURON specific
+x86_64/
+*.o
+*.mod
+
+# Generated network files (too large for GitHub)
+net_files/
+cell_sim/
+analysis_env/
+
+# Analysis outputs
+analysis_out/
+html/
+plots/
+x86_64/
+__pycache__/
+.pixi/
+.DS_Store
+*.swp
+*.swo
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Keep source NeuroML files but exclude generated ones
+!cell_files/*.nml
+!channel_files/*.nml
+!net_files/*.nml

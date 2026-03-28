@@ -1,0 +1,28 @@
+# Table of contents
+format: jb-book
+root: README
+parts:
+  - caption: Introduction and Methods
+    chapters:
+      - file: neuronal_network_construction_analysis_paper
+        title: Main Paper
+  - caption: Analysis Scripts
+    chapters:
+      - file: analysis
+        title: Network Analysis
+      - file: ei_analysis  
+        title: Excitatory-Inhibitory Analysis
+      - file: extract_net_parpams
+        title: Network Parameter Extraction
+  - caption: Cell Analysis
+    chapters:
+      - file: 01_extract_cell_data
+        title: Cell Data Extraction
+      - file: 02_catalog_cells_by_pattern
+        title: Cell Cataloging by Pattern
+      - file: cluster_ct_cells
+        title: CT Cell Clustering
+      - file: cluster_it_cells
+        title: IT Cell Clustering
+      - file: cluster_pt_cells
+        title: PT Cell Clustering
