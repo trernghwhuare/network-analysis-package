@@ -1,8 +1,8 @@
 # Comprehensive Pipeline for Large-Scale Neuronal Network Construction and Analysis
 
 **Authors**: [Hua Cheng]
-**Affiliation**: [Indepandent Researcher]
-**Correspondence**: [trernghwhuare@aliyun.com]
+**Affiliation**: Independent Researcher
+**Correspondence**: trernghwhuare@aliyun.com
 
 ## Abstract
 
@@ -117,7 +117,7 @@ Each region contained appropriate laminar organization with layer-specific neuro
 
 #### Network Model Configuration Parameters
 
-Detailed configuration parameters for all 25 network models are stored in the [net_params/](file:///home/leo520/pynml/net_params/) directory, with each subdirectory containing comprehensive parameter files that define:
+Detailed configuration parameters for all 26 network models are stored in the [net_params/](file:///home/leo520/pynml/net_params/) directory, with each subdirectory containing comprehensive parameter files that define:
 
 - **Population specifications**: Cell type definitions, population sizes, and regional assignments
 - **Connectivity rules**: Layer-specific connection probabilities, distance-dependent connectivity functions, and synapse type distributions
@@ -239,7 +239,75 @@ A critical component of our pipeline was the development and validation of bioph
 
 **Core Thalamic Nuclei (TCRc/nRTc)**: These relay-specific neurons exhibited characteristic burst and tonic firing modes in response to current injection protocols. Our TCRc models reproduced the hallmark low-threshold calcium spikes (LTS) followed by high-frequency bursts, while nRTc interneurons demonstrated fast-spiking properties with strong afterhyperpolarization.
 
+<div align="center">
+  
+**Figure 4. Electrophysiological validation of thalamic core nuclei models.**
+
+<img src="./cell_sim/TCRc/TCRc_if.png" width="45%" alt="TCRc Input-Frequency Relationship">
+<img src="./cell_sim/TCRc/TCRc_iv.png" width="45%" alt="TCRc Current-Voltage Relationship">
+
+*Left: Input-frequency relationship for TCRc neurons showing characteristic burst firing at threshold currents. Right: Current-voltage relationship demonstrating low-threshold calcium spike activation.*
+
+<img src="./cell_sim/TCRc/TCRc_voltage_traces.png" width="60%" alt="TCRc Voltage Traces">
+
+*Representative voltage traces from TCRc neurons showing low-threshold calcium spikes (LTS) followed by high-frequency bursts in response to depolarizing current steps.*
+
+<img src="./cell_sim/nRTc/nRTc_if.png" width="45%" alt="nRTc Input-Frequency Relationship">
+<img src="./cell_sim/nRTc/nRTc_iv.png" width="45%" alt="nRTc Current-Voltage Relationship">
+
+*Left: Input-frequency relationship for nRTc interneurons demonstrating fast-spiking properties. Right: Current-voltage relationship showing linear I-V characteristics typical of fast-spiking interneurons.*
+
+<img src="./cell_sim/nRTc/nRTc_voltage_traces.png" width="60%" alt="nRTc Voltage Traces">
+
+*Representative voltage traces from nRTc interneurons showing fast-spiking responses with strong afterhyperpolarization following current injection protocols.*
+
+</div>
+
 **Matrix Thalamic Nuclei (TCRm/nRTm)**: Matrix-projecting thalamic neurons showed distinct electrophysiological signatures compared to core nuclei, including broader action potentials and more pronounced sag potentials in response to hyperpolarizing currents, consistent with higher H-current expression.
+
+<div align="center">
+  
+**Figure 5. Electrophysiological validation of thalamic matrix nuclei models.**
+
+</div>
+
+### Supplementary Figures
+
+**Supplementary Figure S1**: Electrophysiological validation of TCRc (thalamocortical relay core) neuron models.
+
+<div align="center">
+<img src="./cell_sim/TCRc/TCRc_sim_seg0_soma0-v.png" width="45%" alt="TCRc Soma Voltage Trace Low Current">
+<img src="./cell_sim/TCRc/TCRc_sim_seg1_soma0-v.png" width="45%" alt="TCRc Soma Voltage Trace High Current">
+
+<img src="./cell_sim/TCRc/TCRc_sim_seg0_dend0-v.png" width="45%" alt="TCRc Dendrite Voltage Trace">
+<img src="./cell_sim/TCRc/TCRc_sim_seg0_axon0-v.png" width="45%" alt="TCRc Axon Voltage Trace">
+
+<img src="./cell_sim/TCRc/TCRc_xy.png" width="60%" alt="TCRc Morphology XY View">
+</div>
+
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRc/](file:///home/leo520/pynml/cell_sim/TCRc/) simulations.*
+
+**Supplementary Figure S2**: Electrophysiological validation of nRTc (nucleus reticularis thalami core) interneuron models. Fast-spiking responses with strong afterhyperpolarization following current injection protocols. Data generated from [cell_sim/nRTc/](file:///home/leo520/pynml/cell_sim/nRTc/) simulations.
+
+<img src="./cell_sim/TCRm/TCRm_if.png" width="45%" alt="TCRm Input-Frequency Relationship">
+<img src="./cell_sim/TCRm/TCRm_iv.png" width="45%" alt="TCRm Current-Voltage Relationship">
+
+*Left: Input-frequency relationship for TCRm neurons showing broader action potentials and higher H-current expression. Right: Current-voltage relationship demonstrating pronounced sag potentials in response to hyperpolarizing currents.*
+
+<img src="./cell_sim/TCRm/TCRm_voltage_traces.png" width="60%" alt="TCRm Voltage Traces">
+
+*Representative voltage traces from TCRm neurons showing characteristic matrix-type responses with broader action potentials and enhanced sag potentials indicating higher H-current (Ih) expression.*
+
+<img src="./cell_sim/nRTm/nRTm_if.png" width="45%" alt="nRTm Input-Frequency Relationship">
+<img src="./cell_sim/nRTm/nRTm_iv.png" width="45%" alt="nRTm Current-Voltage Relationship">
+
+*Left: Input-frequency relationship for nRTm interneurons displaying intermediate firing properties between core and intralaminar types. Right: Current-voltage relationship showing distinct electrophysiological signatures characteristic of matrix-projecting thalamic interneurons.*
+
+<img src="./cell_sim/nRTm/nRTm_voltage_traces.png" width="60%" alt="nRTm Voltage Traces">
+
+*Representative voltage traces from nRTm interneurons demonstrating intermediate properties with unique adaptation patterns during sustained depolarization.*
+
+</div>
 
 **Intralaminar Thalamic Nuclei (TCRil/nRTil)**: Intralaminar neurons displayed intermediate properties between core and matrix types, with moderate burst capabilities and unique adaptation patterns during sustained depolarization.
 
@@ -257,6 +325,7 @@ Chemical synapses showed characteristic patterns consistent with cortical microc
 - **Excitatory-to-inhibitory (EI)**: 23,714 contacts (25.6%)
 - **Inhibitory-to-excitatory (IE)**: 18,146 contacts (19.6%)
 - **Inhibitory-to-inhibitory (II)**: 9,448 contacts (10.2%)
+
 
 This distribution reflects the canonical motif where excitatory neurons provide strong recurrent excitation while also driving feedforward inhibition.
 
@@ -277,6 +346,25 @@ Analysis of per-population connectivity revealed systematic relationships:
 - **Inhibitory neurons**: Average 199 outgoing connections, with strong targeting of other inhibitory cells (90.8%)
 
 This organization supports both recurrent excitation within excitatory populations and disinhibition through inhibitory-interneuron networks.
+<div align="center">
+  
+**Figure 6. M1_max_plus network connectivity analysis visualizations.**
+
+<img src="./plots/M1_max_plus_population_stats/M1_max_plus_population_stats_ei_errorbars.png" width="120%" alt="M1_max_plus E-I Error Bars">
+<img src="./plots/M1_max_plus_population_stats/M1_max_plus_population_stats_ei_highlight_kde.png" width="120%" alt="M1_max_plus E-I Connectivity KDE">
+
+*Top: Error bars plot showing statistical confidence intervals for excitatory-inhibitory connectivity ratios across neuronal populations. Bottom: Kernel density estimation illustrating the balanced E/I ratio of 66:34 in the M1_max_plus network.*
+
+<img src="./plots/M1_max_plus_population_stats/M1_max_plus_population_stats_combined_heatmaps.png" width="120%" alt="M1_max_plus Combined Heatmaps">
+<img src="./plots/M1_max_plus_population_stats/M1_max_plus_population_stats_clustermap.png" width="80%" alt="M1_max_plus Clustermap">
+
+*Top: Combined heatmaps displaying synaptic contact distributions across all connection types (EE, EI, IE, II) and electrical coupling patterns. Bottom: Hierarchical clustermap revealing population-level connectivity correlations and organizational principles.*
+
+<img src="./plots/M1_max_plus_population_stats/M1_max_plus_population_stats_population_stats_violins.png" width="120%" alt="M1_max_plus Population Statistics Violins">
+
+*Violin plots showing log-distributions of connection densities across neuronal populations, demonstrating the systematic input-output relationships described in the text.*
+
+</div>
 
 ### Regional Specialization
 
@@ -290,7 +378,7 @@ Thalamocortical circuits demonstrated appropriate driver/modulator distinctions 
 
 ### Comprehensive Statistical Analysis
 
-Quantitative analysis of our constructed networks revealed fundamental organizational principles consistent with rodent cortical circuitry. Our pipeline generated comprehensive statistical analyses for **25 distinct network configurations**, spanning single-region circuits, thalamocortical loops, multi-region integrations, and specialized inhibitory networks. All statistical results are available in the [analysis_out/](file:///home/leo520/pynml/analysis_out/) directory as structured JSON files.
+Quantitative analysis of our constructed networks revealed fundamental organizational principles consistent with rodent cortical circuitry. Our pipeline generated comprehensive statistical analyses for **26 distinct network configurations**, spanning single-region circuits, thalamocortical loops, multi-region integrations, and specialized inhibitory networks. All statistical results are available in the [analysis_out/](file:///home/leo520/pynml/analysis_out/) directory as structured JSON files.
 
 **Network Categories Analyzed**:
 - **Single-region cortical networks**: M1_max_plus, M1a_max_plus, M1b_max_plus, M2_max_plus, M2a_max_plus, M2b_max_plus, S1_max_plus, S1a_max_plus, S1b_max_plus
@@ -333,7 +421,7 @@ The M1_max_plus network serves as our primary reference network for detailed sta
 These comprehensive statistics for the M1_max_plus network, generated automatically during network construction using our analysis pipeline (`analysis.py`, `ei_analysis.py`), provide quantitative validation that our networks reproduce key experimental observations while maintaining biological plausibility across all scales from single-cell properties to population-level organization.
 
 **Cross-Network Comparative Analysis**:
-Systematic comparison across all 25 networks revealed consistent organizational principles while highlighting region-specific specializations:
+Systematic comparison across all 26 networks revealed consistent organizational principles while highlighting region-specific specializations:
 - **Motor cortex networks (M1/M2)**: Higher proportions of layer 5 pyramidal tract neurons and stronger corticospinal projections
 - **Somatosensory networks (S1)**: Enhanced layer 4 granular processing with dense thalamocortical inputs  
 - **Thalamocortical circuits**: Appropriate driver/modulator distinctions with core thalamic inputs providing strong transmission to layer 4
@@ -351,8 +439,32 @@ Comprehensive visualization of our network properties was generated using custom
 - **Scatter plots with regression lines** illustrating relationships between outgoing and incoming connections for excitatory and inhibitory populations
 - **Histogram grids** displaying input distribution patterns (exc_inputs, inh_inputs) across neuronal subtypes
 
+<div align="center">
+  
+**Figure 7. Comparative violin plots across key network configurations.**
+
+<img src="./plots/M1_max_plus_population_stats/M1_max_plus_population_stats_population_stats_violins.png" width="120%" alt="M1_max_plus Violins">
+<img src="./plots/M2_max_plus_population_stats/M2_max_plus_population_stats_population_stats_violins.png" width="120%" alt="M2_max_plus Violins">
+<img src="./plots/S1_max_plus_population_stats/S1_max_plus_population_stats_population_stats_violins.png" width="120%" alt="S1_max_plus Violins">
+
+*Motor and sensory cortex networks: M1_max_plus (primary motor), M2_max_plus (secondary motor), and S1_max_plus (primary somatosensory) showing distinct connectivity distribution patterns reflecting their specialized computational roles.*
+
+<img src="./plots/C2T_max_plus_population_stats/C2T_max_plus_population_stats_population_stats_violins.png" width="120%" alt="C2T_max_plus Violins">
+<img src="./plots/T2C_max_plus_population_stats/T2C_max_plus_population_stats_population_stats_violins.png" width="120%" alt="T2C_max_plus Violins">
+<img src="./plots/max_CTC_plus_population_stats/max_CTC_plus_population_stats_population_stats_violins.png" width="120%" alt="CTC_max_plus Violins">
+
+*Thalamocortical circuits: C2T_max_plus (cortex-to-thalamus), T2C_max_plus (thalamus-to-cortex), and CTC_max_plus (cortico-thalamo-cortical) demonstrating driver/modulator distinctions in connectivity distributions.*
+
+<img src="./plots/iC_max_population_stats/iC_max_population_stats_population_stats_violins.png" width="120%" alt="iC_max Violins">
+<img src="./plots/iT_max_plus_population_stats/iT_max_plus_population_stats_population_stats_violins.png" width="120%" alt="iT_max_plus Violins">
+<img src="./plots/M2M1S1_max_plus_population_stats/M2M1S1_max_plus_population_stats_population_stats_violins.png" width="120%" alt="M2M1S1_max_plus Violins">
+
+*Specialized networks: iC_max (inhibitory cortex only), iT_max_plus (inhibitory thalamus only), and M2M1S1_max_plus (multi-region integration) revealing cell-type-specific organizational principles.*
+
+</div>
+
 **Network-Specific Visualizations**:
-- **Per-network summary plots** for all 25 analyzed networks, showing population composition, connectivity patterns, and conductance distributions
+- **Per-network summary plots** for all 26 analyzed networks, showing population composition, connectivity patterns, and conductance distributions
 - **Comparative plots** highlighting key differences between motor cortex (M1/M2), somatosensory cortex (S1), and thalamocortical circuits
 - **Layer-specific analysis plots** demonstrating microcircuit organization within individual cortical layers
 
@@ -363,6 +475,27 @@ In addition to static plots, we generated high-resolution interactive visualizat
 - **Dynamic filtering capabilities**: Users can adjust connection strength thresholds to explore weak versus strong connections, with mixed threshold strategies (combining relative and absolute thresholds) to preserve biologically relevant weak signals
 - **Artistic design principles**: Connection lines feature organic curvature variations, subtle transparency gradients (±10%), and soft glow effects for high-strength connections, while maintaining scientific accuracy in connection relationships and strength mappings
 - **Anti-overlap strategies**: Logical grouping by source-target layer pairs with differential horizontal/vertical offsets prevents line overlap while preserving spatial relationships
+
+<div align="center">
+  
+**Figure 8. Interactive layered connectivity visualizations.**
+
+<iframe src="./html/layered_graph_M1_max_plus.html" width="95%" height="500" frameborder="0" style="border: 1px solid #ccc; margin: 10px 0;"></iframe>
+<iframe src="./html/layer_string_graph_M1_max_plus.html" width="95%" height="500" frameborder="0" style="border: 1px solid #ccc; margin: 10px 0;"></iframe>
+
+*Top: Layered graph view of M1_max_plus network showing comprehensive connectivity patterns across cortical layers. Bottom: String graph representation providing alternative topological visualization of the same network.*
+
+<iframe src="./html/layered_graph_S1_max_plus.html" width="95%" height="500" frameborder="0" style="border: 1px solid #ccc; margin: 10px 0;"></iframe>
+<iframe src="./html/layer_string_graph_S1_max_plus.html" width="95%" height="500" frameborder="0" style="border: 1px solid #ccc; margin: 10px 0;"></iframe>
+
+*Top: Layered graph view of S1_max_plus network highlighting somatosensory-specific connectivity patterns. Bottom: String graph representation emphasizing unique input-output relationships in primary somatosensory cortex.*
+
+<iframe src="./html/layered_graph_T2C_max_plus.html" width="95%" height="500" frameborder="0" style="border: 1px solid #ccc; margin: 10px 0;"></iframe>
+<iframe src="./html/layer_string_graph_T2C_max_plus.html" width="95%" height="500" frameborder="0" style="border: 1px solid #ccc; margin: 10px 0;"></iframe>
+
+*Top: Layered graph view of T2C_max_plus thalamocortical circuit demonstrating driver/modulator distinctions. Bottom: String graph representation showing thalamic input patterns to cortical layers.*
+
+</div>
 
 Each network model has corresponding interactive visualizations:
 - **Layered graph views**: `layered_graph_[network_name].html` showing comprehensive connectivity patterns
@@ -408,11 +541,11 @@ Our analysis reveals several organizational principles of cortical circuits:
 
 ### Implications for Computational Neuroscience
 
-Our work represents a significant advance in large-scale neural network modeling by bridging the gap between biological realism and computational tractability. The construction of 25 distinct network configurations spanning single-region circuits to complex multi-area systems provides an unprecedented resource for testing hypotheses about cortical computation¹⁸.
+Our work represents a significant advance in large-scale neural network modeling by bridging the gap between biological realism and computational tractability. The construction of 26 distinct network configurations spanning single-region circuits to complex multi-area systems provides an unprecedented resource for testing hypotheses about cortical computation¹⁸.
 
 **Multi-Scale Integration Framework**: Our pipeline demonstrates that it is possible to integrate molecular-level ion channel properties, cellular-level morphological details, and circuit-level connectivity patterns into unified computational frameworks⁷,¹⁹. This multi-scale approach enables investigation of how microscopic properties (e.g., specific ion channel distributions) influence macroscopic network dynamics (e.g., oscillatory behavior, information propagation)⁶.
 
-**Standardized Model Repository**: The generation of standardized NeuroML2 files for 25 different network configurations creates a reproducible model repository that can serve as a foundation for the broader computational neuroscience community⁹. Unlike many previous modeling efforts that remain locked in proprietary formats, our open-standard approach ensures long-term accessibility and interoperability²⁰.
+**Standardized Model Repository**: The generation of standardized NeuroML2 files for 26 different network configurations creates a reproducible model repository that can serve as a foundation for the broader computational neuroscience community⁹. Unlike many previous modeling efforts that remain locked in proprietary formats, our open-standard approach ensures long-term accessibility and interoperability²⁰.
 
 **Validation Through Multiple Modalities**: By generating both static statistical analyses and interactive visualizations, our approach provides multiple complementary validation modalities. This multi-modal validation strategy helps ensure that models are not only mathematically consistent but also biologically plausible and visually interpretable²¹.
 
@@ -520,7 +653,7 @@ We thank the Allen Institute for Brain Science, NeuroMorpho.Org, and the broader
 
 16. Litwin-Kumar A, Doiron B (2014) Formation and maintenance of neuronal assemblies through synaptic plasticity. *Nat Commun* 5:5319. https://doi.org/10.1038/ncomms6319
 
-17. Ascoli GA, et al. (2007) NeuroMorpho.Org: a central resource for neuronal morphologies. *J Neurosci* 27(35):9247-9251. https://doi.org/10.1523/JNEUROSCI.2295-07.2007
+17. Ascoli GA, et al. (2007) NeuroMorpho.Org: a central resource for neuronal morphologies. *J Neurosci* 27(35):9247-9251. https://doi.org/10.1523/JNEUROSCI.2055-07.2007
 
 18. Yuste R (2015) From the neuron doctrine to neural networks. *Nat Rev Neurosci* 16(8):487-497. https://doi.org/10.1038/nrn3962
 

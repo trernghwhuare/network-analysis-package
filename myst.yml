@@ -1,0 +1,25 @@
+version: 1
+project:
+  title: >-
+    Comprehensive Pipeline for Large-Scale Neuronal Network Construction and
+    Analysis
+  authors:
+    - name: Hua Cheng
+  copyright: '2026'
+  github: trernghwhuare/network-analysis-package
+  thebe:
+    binder:
+      repo: trernghwhuare/network-analysis-package
+      provider: github
+      url: https://mybinder.org
+      ref: main
+  toc:
+    - file: README.md
+    - title: Main Paper
+      children:
+        - file: neuronal_network_construction_analysis_paper.md
+          title: Comprehensive Pipeline Paper
+site:
+  options:
+    folders: true
+  template: book-theme

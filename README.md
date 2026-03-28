@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/trernghwhuare/network-analysis-package/main)
 
-This repository contains the complete computational pipeline for constructing, simulating, and analyzing large-scale biologically detailed neuronal networks spanning multiple cortical and thalamic regions.
+This repository contains the complete computational pipeline for constructing, simulating, and analyzing large-scale biologically detailed neuronal networks spanning multiple cortical and thalamic regions. The documentation is written in **MyST (Markedly Structured Text)** format for optimal compatibility with Jupyter Book and NeuroLibre publishing.
 
 ## Overview
 
@@ -15,6 +15,7 @@ Our methodology integrates morphologically realistic single-cell models with reg
 - **Comprehensive thalamocortical integration** with appropriate driver/modulator distinctions
 - **Standardized model representation** using NeuroML2 for interoperability
 - **Scalable architecture** supporting networks with >145K neurons and >580K connections
+- **MyST-formatted documentation** with full citation support for academic publishing
 
 ## Repository Structure
 
@@ -28,7 +29,8 @@ Our methodology integrates morphologically realistic single-cell models with reg
 ├── plots/                # Static plots and figures
 ├── *.py                  # Core analysis and simulation scripts
 ├── *.nml                 # NeuroML2 model files
-└── neuronal_network_construction_analysis_paper.md  # Main paper
+├── neuronal_network_construction_analysis_paper.md  # Main paper (MyST format)
+└── references.bib        # Bibliography for citations
 ```
 
 ## Installation and Setup
@@ -69,7 +71,7 @@ For detailed usage instructions, refer to the main paper document.
 
 ## Reproducibility
 
-This repository is designed for full reproducibility and has been prepared for publication on [neuroLibre](https://neurolibre.ca/). All dependencies are specified in:
+This repository is designed for full reproducibility and has been prepared for publication on [neuroLibre](https://neurolibre.ca/) using **MyST format**. All dependencies are specified in:
 - `pixi.toml` (primary dependency management)
 - `environment.yml` (conda environment)
 - `requirements.txt` (pip requirements)
@@ -82,7 +84,7 @@ If you use this work in your research, please cite:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](#LICENSE) file for details.
 
 ## Acknowledgments
 

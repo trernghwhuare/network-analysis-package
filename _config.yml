@@ -35,3 +35,21 @@ parse:
     - replacements
     - smartquotes
     - substitution
+    - colon_fence
+    - deflist
+    - dollarmath
+    - tasklist
+  myst_url_schemes: ["http", "https", "mailto"]
+
+# MyST-specific settings
+myst:
+  # Enable figure numbering
+  number_figures: true
+  # Enable equation numbering
+  number_equations: true
+  # Enable heading anchors
+  heading_anchors: 2
+  # Bibliography file for citations
+  biblio:
+    bib_files:
+      - references.bib

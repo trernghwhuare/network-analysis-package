@@ -83,3 +83,5 @@ Thumbs.db
 !cell_files/*.nml
 !channel_files/*.nml
 !net_files/*.nml
+# MyST build outputs
+_build
