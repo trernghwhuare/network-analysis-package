@@ -10,12 +10,14 @@ date: "2026-03-29"
 bibliography: references.bib
 csl: nature.csl
 exports:
-  - format: pdf
+  - format: docx
     template: https://github.com/myst-templates/article-theme.git
 numbering:
   heading_2: false
   figure:
     template: "Fig. %s"
+---
+
 ---
 
 ---
