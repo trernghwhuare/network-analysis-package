@@ -17,10 +17,11 @@ build:
     - npm install -g mystmd
     # Build the site
     - myst build --html
-    # Copy static files that MyST doesn't automatically include
-    - cp -r plots/ _build/html/
-    - cp -r html/ _build/html/
-    - cp -r cell_sim/ _build/html/
-    # Copy the output to Read the Docs expected location
+    # Create Read the Docs output directory
     - mkdir -p $READTHEDOCS_OUTPUT/html/
-    - cp -r _build/html/. "$READTHEDOCS_OUTPUT/html"
+    # Copy MyST build output to Read the Docs expected location
+    - cp -r _build/html/. $READTHEDOCS_OUTPUT/html/
+    # Copy static files that MyST doesn't automatically include
+    - cp -r plots/ $READTHEDOCS_OUTPUT/html/
+    - cp -r html/ $READTHEDOCS_OUTPUT/html/
+    - cp -r cell_sim/ $READTHEDOCS_OUTPUT/html/
