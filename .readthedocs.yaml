@@ -10,8 +10,8 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    python: "y"
-    nodejs: "y"
+    python: "3.10"
+    nodejs: "18"
   commands:
     # Install myst
     - npm install -g mystmd
