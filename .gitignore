@@ -77,6 +77,9 @@ Thumbs.db
 # Logs
 *.log
 
+# DOCX files (not compatible with HTML div elements in MyST documents)
+*.docx
+
 # Keep source NeuroML files but exclude generated ones
 !cell_files/*.nml
 !channel_files/*.nml

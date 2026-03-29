@@ -1,9 +1,0 @@
-# Documentation build requirements (excludes NEURON which can't be installed via pip)
-numpy>=1.24.0
-scipy>=1.10.0
-pandas>=2.0.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-pyNeuroML>=0.6.0
-jupyter-book>=0.15.0
-myst-parser>=0.18.0
