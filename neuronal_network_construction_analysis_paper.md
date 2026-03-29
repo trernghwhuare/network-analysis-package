@@ -1,14 +1,27 @@
------
+---
 title: "Comprehensive Pipeline for Large-Scale Neuronal Network Construction and Analysis"
 authors:
   - name: Hua Cheng
+    affiliations:
+      - Independent Researcher
     orcid: 0000-0003-0903-6766
-    affiliation: 
-     - Independent Researcher
 license: CC-BY-4.0
+date: "2026-03-29"
+bibliography: paper.bib
+csl: nature.csl
+exports:
+  - format: pdf
+    template: https://github.com/myst-templates/article-theme.git
+numbering:
+  heading_2: false
+  figure:
+    template: "Fig. %s"
+---
 
-**Correspondence**: [trernghwhuare@aliyun.com]
-----
+---
+
+# Comprehensive Pipeline for Large-Scale Neuronal Network Construction and Analysis
+
 ## Abstract
 
 We present a comprehensive computational pipeline for the construction, simulation, and analysis of large-scale biologically detailed neuronal networks spanning multiple cortical and thalamic regions. Our methodology integrates morphologically realistic single-cell models with region-specific connectivity rules derived from anatomical data, enabling the generation of networks containing over 145,000 neurons and 581,743 synaptic and electrical connections. The pipeline employs a multi-layered approach combining chemical synapses (AMPA, NMDA, GABA_A, GABA_B) with electrical gap junctions, and incorporates cell-type-specific classification based on transcriptomic and morphological criteria. We demonstrate the application of this framework to construct and analyze networks representing primary motor cortex (M1), secondary motor cortex (M2), primary somatosensory cortex (S1), and their thalamocortical interactions in the rodent brain. Our analysis reveals fundamental organizational principles including balanced excitatory-inhibitory ratios (66:34), layer-specific connectivity patterns, and cell-type-dependent input-output relationships. This standardized procedure provides a reproducible framework for investigating emergent network dynamics and serves as a foundation for hypothesis-driven computational neuroscience research.
