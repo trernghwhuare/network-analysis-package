@@ -58,8 +58,6 @@ analysis_env/
 
 # Analysis outputs
 analysis_out/
-html/
-plots/
 x86_64/
 __pycache__/
 .pixi/
