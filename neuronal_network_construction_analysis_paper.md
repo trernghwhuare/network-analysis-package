@@ -7,7 +7,7 @@ authors:
     orcid: 0000-0003-0903-6766
 license: CC-BY-4.0
 date: "2026-03-29"
-bibliography: paper.bib
+bibliography: references.bib
 csl: nature.csl
 exports:
   - format: pdf
