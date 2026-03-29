@@ -11,11 +11,15 @@ build:
   commands:
     # Install myst (Node.js version)
     - npm install -g mystmd
+    # Build the site (outputs to _build/html by default)
+    - myst build --html
     # Create Read the Docs output directory
     - mkdir -p $READTHEDOCS_OUTPUT/html/
-    # Build directly to Read the Docs output directory to avoid _build/html issues
-    - myst build --html --output-dir $READTHEDOCS_OUTPUT/html/
+    # Copy MyST build output to Read the Docs expected location
+    - cp -r _build/html/. $READTHEDOCS_OUTPUT/html/
     # Copy static files that MyST doesn't automatically include
     - cp -r plots/ $READTHEDOCS_OUTPUT/html/
     - cp -r html/ $READTHEDOCS_OUTPUT/html/
     - cp -r cell_sim/ $READTHEDOCS_OUTPUT/html/
+    # Clean up build artifacts to avoid unsupported output path warnings
+    - rm -rf _build

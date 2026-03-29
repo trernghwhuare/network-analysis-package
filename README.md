@@ -71,7 +71,7 @@ For detailed usage instructions, refer to the main paper document.
 
 ## Reproducibility
 
-This repository is designed for full reproducibility and has been prepared for publication on [neuroLibre](https://neurolibre.ca/) using **MyST format**. All dependencies are specified in:
+This repository is designed for full reproducibility and has been prepared for publication on [neuroLibre](https://neurolibre.org/) using **MyST format**. All dependencies are specified in:
 - `pixi.toml` (primary dependency management)
 - `environment.yml` (conda environment)
 - `requirements.txt` (pip requirements)
