@@ -25,3 +25,5 @@ build:
     - cp -r plots/ $READTHEDOCS_OUTPUT/html/
     - cp -r html/ $READTHEDOCS_OUTPUT/html/
     - cp -r cell_sim/ $READTHEDOCS_OUTPUT/html/
+    # Clean up build artifacts to avoid unsupported output path warnings
+    - rm -rf _build
