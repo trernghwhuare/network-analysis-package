@@ -245,8 +245,8 @@ A critical component of our pipeline was the development and validation of bioph
 
 **Figure 1. Electrophysiological validation of thalamic core nuclei models.**
 
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin:1rem 0; width:100%;">
-  <figure style="margin:0;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
     <img src="./cell_sim/TCRc/TCRc_if.png" alt="TCRc Input-Frequency Relationship" style="width:100%; height:auto; display:block;" />
     <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) TCRc input-frequency relationship showing characteristic burst firing patterns.</figcaption>
   </figure>
@@ -254,26 +254,31 @@ A critical component of our pipeline was the development and validation of bioph
     <img src="./cell_sim/TCRc/TCRc_iv.png" alt="TCRc Current-Voltage Relationship" style="width:100%; height:auto; display:block;" />
     <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) TCRc current-voltage relationship showing characteristic properties.</figcaption>
   </figure>
-  <figure style="margin:0;">
+</div>
+
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+   <img src="./cell_sim/TCRc/TCRc_voltage_traces.png" alt="TCRc Voltage Traces" style="width:100%; height:auto; display:block;" />
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) TCRc voltage traces showing characteristic firing patterns.</figcaption>
+  </figure>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
     <img src="./cell_sim/nRTc/nRTc_if.png" alt="nRTc Input-Frequency Relationship" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) nRTc input-frequency relationship showing characteristic fast-spiking properties.</figcaption>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) nRTc input-frequency relationship showing characteristic fast-spiking properties.</figcaption>
   </figure>
   <figure style="margin:0;">
     <img src="./cell_sim/nRTc/nRTc_iv.png" alt="nRTc Current-Voltage Relationship" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) nRTc current-voltage relationship showing characteristic properties.</figcaption>
+    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) nRTc current-voltage relationship showing characteristic properties.</figcaption>
   </figure>
 </div>
 
 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin:1rem 0; width:100%;">
   <figure style="margin:0;">
-    <img src="./cell_sim/TCRc/TCRc_voltage_traces.png" alt="TCRc Voltage Traces" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) TCRc voltage traces showing characteristic firing patterns.</figcaption>
-  </figure>
-  <figure style="margin:0;">
     <img src="./cell_sim/nRTc/nRTc_voltage_traces.png" alt="nRTc Voltage Traces" style="width:100%; height:auto; display:block;" />
     <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(F) nRTc voltage traces showing characteristic firing patterns.</figcaption>
   </figure>
-</div>
 </div>
 
 Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) interneuron models. Fast-spiking responses with strong afterhyperpolarization following current injection protocols. Data generated from [cell_sim/](file:///home/leo520/pynml/cell_sim/TCRc/, file:///home/leo520/pynml/cell_sim/nRTc/) simulations.
@@ -336,7 +341,9 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 
 
 <div align="center">
+
 **Figure 2. Electrophysiological validation of thalamic matrix nuclei models.**
+
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
   <img src="./cell_sim/TCRm/TCRm_if.png" alt="TCRm Input-Frequency Relationship"
@@ -447,6 +454,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 **Intralaminar Thalamic Nuclei (TCRil/nRTil)**: Intralaminar neurons displayed intermediate properties between core and matrix types, with moderate burst capabilities and unique adaptation patterns during sustained depolarization.
 
 <div align="center">
+
 **Figure 3. Electrophysiological validation of thalamic intralaminar nuclei models.**
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
@@ -584,6 +592,7 @@ Analysis of per-population connectivity revealed systematic relationships:
 - **Inhibitory neurons**: Average 199 outgoing connections, with strong targeting of other inhibitory cells (90.8%)
 
 This organization supports both recurrent excitation within excitatory populations and disinhibition through inhibitory-interneuron networks.
+
 <div align="center">
   
 **Figure 4. M1_max_plus network connectivity analysis visualizations.**

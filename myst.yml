@@ -19,8 +19,7 @@ project:
       children:
         - file: neuronal_network_construction_analysis_paper.md
           title: Comprehensive Pipeline Paper
-html:
-  static_files:
-    - plots/
-    - html/
-    - cell_sim/
+execute:
+  execute_notebooks: 'off'
+site:
+  template: book-theme
