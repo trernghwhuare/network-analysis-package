@@ -248,36 +248,36 @@ A critical component of our pipeline was the development and validation of bioph
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRc_if.png" alt="TCRc Input-Frequency Relationship" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) TCRc input-frequency relationship showing characteristic burst firing patterns.</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRc input-frequency relationship showing characteristic burst firing patterns.</figcaption>
   </figure>
   <figure style="margin:0;">
     <img src="./plots/figures/TCRc_iv.png" alt="TCRc Current-Voltage Relationship" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) TCRc current-voltage relationship showing characteristic properties.</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRc current-voltage relationship showing characteristic properties.</figcaption>
   </figure>
 </div>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
    <img src="./plots/figures/TCRc_voltage_traces.png" alt="TCRc Voltage Traces" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) TCRc voltage traces showing characteristic firing patterns.</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRc voltage traces showing characteristic firing patterns.</figcaption>
   </figure>
 </div>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTc_if.png" alt="nRTc Input-Frequency Relationship" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) nRTc input-frequency relationship showing characteristic fast-spiking properties.</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTc input-frequency relationship showing characteristic fast-spiking properties.</figcaption>
   </figure>
   <figure style="margin:0;">
     <img src="./plots/figures/nRTc_iv.png" alt="nRTc Current-Voltage Relationship" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) nRTc current-voltage relationship showing characteristic properties.</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTc current-voltage relationship showing characteristic properties.</figcaption>
   </figure>
 </div>
 
 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px; margin:1rem 0; width:100%;">
   <figure style="margin:0;">
     <img src="./plots/figures/nRTc_voltage_traces.png" alt="nRTc Voltage Traces" style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(F) nRTc voltage traces showing characteristic firing patterns.</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(F) nRTc voltage traces showing characteristic firing patterns.</figcaption>
   </figure>
 </div>
 
@@ -288,25 +288,25 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRc/TCRc_sim_seg0_soma0-v.png" width="100%" alt="TCRc Soma Voltage Trace Low Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) TCRc Soma Voltage Trace Low Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRc Soma Voltage Trace Low Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRc/TCRc_sim_seg1_soma0-v.png" width="100%" alt="TCRc Soma Voltage Trace High Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) TCRc Soma Voltage Trace High Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRc Soma Voltage Trace High Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRc/TCRc_sim_seg0_dend0-v.png" width="100%" alt="TCRc Dendrite Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) TCRc Dendrite Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRc Dendrite Voltage Trace</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRc/TCRc_sim_seg0_axon0-v.png" width="100%" alt="TCRc Axon Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) TCRc Axon Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRc Axon Voltage Trace</figcaption>
   </figure>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/TCRc/TCRc_xy.png" width="100%" alt="TCRc Morphology XY View">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) TCRc Morphology XY View</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRc Morphology XY View</figcaption>
   </figure>
 </div>
 
@@ -315,25 +315,25 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTc/nRTc_sim_seg0_soma0-v.png" width="100%" alt="nRTc Soma Voltage Trace Low Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) nRTc Soma Voltage Trace Low Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTc Soma Voltage Trace Low Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTc/nRTc_sim_seg1_soma0-v.png" width="100%" alt="nRTc Soma Voltage Trace High Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) nRTc Soma Voltage Trace High Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTc Soma Voltage Trace High Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTc/nRTc_sim_seg0_dend0-v.png" width="100%" alt="nRTc Dendrite Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) nRTc Dendrite Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTc Dendrite Voltage Trace</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTc/nRTc_sim_seg0_axon0-v.png" width="100%" alt="nRTc Axon Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) nRTc Axon Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTc Axon Voltage Trace</figcaption>
   </figure>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/nRTc/nRTc_xy.png" width="100%" alt="nRTc Morphology XY View">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) nRTc Morphology XY View</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTc Morphology XY View</figcaption>
   </figure>
 </div>
 
@@ -348,13 +348,13 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
   <figure style="margin: 0;">
   <img src="./plots/figures/TCRm/TCRm_if.png" alt="TCRm Input-Frequency Relationship"
          style="width:100%; height:auto; display:block;" />
-  <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) Input-frequency relationship for TCRm neurons showing broader action potentials and higher H-current expression.
+  <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) Input-frequency relationship for TCRm neurons showing broader action potentials and higher H-current expression.
   </figcaption>
   </figure>
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/TCRm/TCRm_iv.png" alt="TCRm Current-Voltage Relationship"
          style="width:100%; height:auto; display:block;">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) Current-voltage relationship for TCRm neurons demonstrating pronounced sag potentials in response to hyperpolarizing currents.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) Current-voltage relationship for TCRm neurons demonstrating pronounced sag potentials in response to hyperpolarizing currents.
     </figcaption>
   </figure>
 </div>
@@ -363,7 +363,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
   <img src="./plots/figures/TCRm/TCRm_voltage_traces.png" style="width:100%; height:auto; display:block;" alt="TCRm Voltage Traces" >
-  <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) Voltage traces for TCRm neurons showing characteristic matrix-type responses with broader action potentials and enhanced sag potentials indicating higher H-current (Ih) expression.
+  <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) Voltage traces for TCRm neurons showing characteristic matrix-type responses with broader action potentials and enhanced sag potentials indicating higher H-current (Ih) expression.
   </figcaption>
 </figure>
 </div>
@@ -372,12 +372,12 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
   <img src="./plots/figures/nRTm/nRTm_if.png" alt="nRTm Input-Frequency Relationship" style="width:100%; height:auto; display:block;">
-  <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) Input-frequency relationship for nRTm interneurons displaying intermediate firing properties between core and intralaminar types.
+  <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) Input-frequency relationship for nRTm interneurons displaying intermediate firing properties between core and intralaminar types.
   </figcaption>
   </figure>
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/nRTm/nRTm_iv.png" alt="nRTm Current-Voltage Relationship" style="width:100%; height:auto; display:block;">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) Current-voltage relationship showing distinct electrophysiological signatures characteristic of matrix-projecting thalamic interneurons.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) Current-voltage relationship showing distinct electrophysiological signatures characteristic of matrix-projecting thalamic interneurons.
     </figcaption>
   </figure>
 </div>
@@ -386,7 +386,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
   <img src="./plots/figures/nRTm/nRTm_voltage_traces.png" style="width:100%; height:auto; display:block;" alt="nRTm Voltage Traces" >
-  <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(F) Voltage traces for nRTm interneurons demonstrating intermediate properties with unique adaptation patterns during sustained depolarization.
+  <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(F) Voltage traces for nRTm interneurons demonstrating intermediate properties with unique adaptation patterns during sustained depolarization.
   </figcaption>
   </figure>
 </div>
@@ -400,25 +400,25 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRm/TCRm_sim_seg0_soma0-v.png" width="100%" alt="TCRm Soma Voltage Trace Low Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) TCRm Soma Voltage Trace Low Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRm Soma Voltage Trace Low Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRm/TCRm_sim_seg1_soma0-v.png" width="100%" alt="TCRm Soma Voltage Trace High Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) TCRm Soma Voltage Trace High Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRm Soma Voltage Trace High Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRm/TCRm_sim_seg0_dend0-v.png" width="100%" alt="TCRm Dendrite Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) TCRm Dendrite Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRm Dendrite Voltage Trace</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRm/TCRm_sim_seg0_axon0-v.png" width="100%" alt="TCRm Axon Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) TCRm Axon Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRm Axon Voltage Trace</figcaption>
   </figure>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/TCRm/TCRm_xy.png" width="100%" alt="TCRm Morphology XY View">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) TCRm Morphology XY View</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRm Morphology XY View</figcaption>
   </figure>
 </div>
 
@@ -427,25 +427,25 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTm/nRTm_sim_seg0_soma0-v.png" width="100%" alt="nRTm Soma Voltage Trace Low Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) nRTm Soma Voltage Trace Low Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTm Soma Voltage Trace Low Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTm/nRTm_sim_seg1_soma0-v.png" width="100%" alt="nRTm Soma Voltage Trace High Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) nRTm Soma Voltage Trace High Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTm Soma Voltage Trace High Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTm/nRTm_sim_seg0_dend0-v.png" width="100%" alt="nRTm Dendrite Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) nRTm Dendrite Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTm Dendrite Voltage Trace</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTm/nRTm_sim_seg0_axon0-v.png" width="100%" alt="nRTm Axon Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) nRTm Axon Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTm Axon Voltage Trace</figcaption>
   </figure>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/nRTm/nRTm_xy.png" width="100%" alt="nRTm Morphology XY View">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) nRTm Morphology XY View</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTm Morphology XY View</figcaption>
   </figure>
 </div>
 
@@ -461,13 +461,13 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
   <figure style="margin: 0;">
   <img src="./plots/figures/TCRil/TCRil_if.png" alt="TCRil Input-Frequency Relationship"
        style="width:100%; height:auto; display:block;" />
-  <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) Input-frequency relationship for TCRil neurons showing characteristic burst firing patterns.
+  <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) Input-frequency relationship for TCRil neurons showing characteristic burst firing patterns.
   </figcaption>
  </figure>
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/TCRil/TCRil_iv.png" alt="TCRil Current-Voltage Relationship"
         style="width:100%; max-width:700px; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) Current-voltage relationship for TCRil neurons showing characteristic properties.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) Current-voltage relationship for TCRil neurons showing characteristic properties.
     </figcaption>
   </figure>
 </div>
@@ -475,7 +475,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/TCRil/TCRil_voltage_traces.png" style="width:100%; height:auto; display:block;" alt="TCRil Voltage Traces">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) Voltage traces for TCRil neurons showing characteristic firing patterns.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) Voltage traces for TCRil neurons showing characteristic firing patterns.
     </figcaption>
   </figure>
 </div>
@@ -484,13 +484,13 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTil/nRTil_if.png" alt="nRTil Input-Frequency Relationship"
          style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) Input-frequency relationship for nRTil neurons showing characteristic fast-spiking properties.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) Input-frequency relationship for nRTil neurons showing characteristic fast-spiking properties.
     </figcaption>
   </figure>
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/nRTil/nRTil_iv.png" alt="nRTil Current-Voltage Relationship"
          style="width:100%; height:auto; display:block;" />
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) Current-voltage relationship for nRTil neurons showing characteristic properties.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) Current-voltage relationship for nRTil neurons showing characteristic properties.
     </figcaption>
   </figure>
 </div>
@@ -498,7 +498,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/nRTil/nRTil_voltage_traces.png" style="width:100%; height:auto; display:block;" alt="nRTil Voltage Traces">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(F) Voltage traces for nRTil neurons showing characteristic firing patterns.
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(F) Voltage traces for nRTil neurons showing characteristic firing patterns.
     </figcaption>
   </figure>
 </div>
@@ -508,25 +508,25 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRil/TCRil_sim_seg0_soma0-v.png" width="100%" alt="TCRil Soma Voltage Trace Low Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) TCRil Soma Voltage Trace Low Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRil Soma Voltage Trace Low Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRil/TCRil_sim_seg1_soma0-v.png" width="100%" alt="TCRil Soma Voltage Trace High Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) TCRil Soma Voltage Trace High Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRil Soma Voltage Trace High Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRil/TCRil_sim_seg0_dend0-v.png" width="100%" alt="TCRil Dendrite Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) TCRil Dendrite Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRil Dendrite Voltage Trace</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/TCRil/TCRil_sim_seg0_axon0-v.png" width="100%" alt="TCRil Axon Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) TCRil Axon Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRil Axon Voltage Trace</figcaption>
   </figure>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/TCRil/TCRil_xy.png" width="100%" alt="TCRil Morphology XY View">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) TCRil Morphology XY View</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRil Morphology XY View</figcaption>
   </figure>
 </div>
 
@@ -535,25 +535,25 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTil/nRTil_sim_seg0_soma0-v.png" width="100%" alt="nRTil Soma Voltage Trace Low Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(A) nRTil Soma Voltage Trace Low Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTil Soma Voltage Trace Low Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTil/nRTil_sim_seg1_soma0-v.png" width="100%" alt="nRTil Soma Voltage Trace High Current">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(B) nRTil Soma Voltage Trace High Current</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTil Soma Voltage Trace High Current</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTil/nRTil_sim_seg0_dend0-v.png" width="100%" alt="nRTil Dendrite Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(C) nRTil Dendrite Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTil Dendrite Voltage Trace</figcaption>
   </figure>
   <figure style="margin: 0;">
     <img src="./plots/figures/nRTil/nRTil_sim_seg0_axon0-v.png" width="100%" alt="nRTil Axon Voltage Trace">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(D) nRTil Axon Voltage Trace</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTil Axon Voltage Trace</figcaption>
   </figure>
 </div>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
     <img src="./plots/figures/nRTil/nRTil_xy.png" width="100%" alt="nRTil Morphology XY View">
-    <figcaption style="text-align:center; font-size:0.9em; margin-top:0.5rem;">(E) nRTil Morphology XY View</figcaption>
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTil Morphology XY View</figcaption>
   </figure>
 </div>
 
