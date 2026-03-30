@@ -76,11 +76,6 @@ This repository is designed for full reproducibility and has been prepared for p
 - `environment.yml` (conda environment)
 - `requirements.txt` (pip requirements)
 
-## Citation
-
-If you use this work in your research, please cite:
-
-> Cheng, H. (2026). Comprehensive Pipeline for Large-Scale Neuronal Network Construction and Analysis. *neuroLibre*.
 
 ## License
 
