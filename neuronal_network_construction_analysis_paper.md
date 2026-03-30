@@ -557,9 +557,13 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
   </figure>
 </div>
 
+<div style="text-align:left; margin-top:1rem;">
 All thalamic cell models were validated through systematic current-clamp protocols implemented in the `cell_sim/` directory (`00_sim_TCRc.py`, `00_sim_TCRil.py`, `00_sim_TCRm.py`, `00_sim_nRTc.py`, `00_sim_nRTil.py`, `00_sim_nRTm.py`). Electrophysiological validation plots demonstrating characteristic firing patterns, input-output relationships, and voltage responses are provided in the supplementary materials (Supplementary Figures S1-S6).
+</div>
 
+<div style="text-align:left; margin-top:1rem;">
 This comprehensive thalamic model library enabled accurate implementation of driver/modulator distinctions in our thalamocortical connectivity, with core inputs providing strong, reliable transmission to layer 4 cortical neurons, while matrix and intralaminar inputs exhibited more diffuse, modulatory patterns.
+</div>
 
 ### Connectivity Patterns
 
@@ -569,6 +573,7 @@ Chemical synapses showed characteristic patterns consistent with cortical microc
 
 - **Excitatory-to-excitatory (EE)**: 41,355 contacts (44.6% of chemical synapses)
 - **Excitatory-to-inhibitory (EI)**: 23,714 contacts (25.6%)
+
 - **Inhibitory-to-excitatory (IE)**: 18,146 contacts (19.6%)
 - **Inhibitory-to-inhibitory (II)**: 9,448 contacts (10.2%)
 
