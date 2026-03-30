@@ -281,61 +281,13 @@ A critical component of our pipeline was the development and validation of bioph
   </figure>
 </div>
 
+
 Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) interneuron models. Fast-spiking responses with strong afterhyperpolarization following current injection protocols. Data generated from [cell_sim/](file:///home/leo520/pynml/cell_sim/TCRc/, file:///home/leo520/pynml/cell_sim/nRTc/) simulations.
 
-**Supplementary Figure S1**: Electrophysiological validation of TCRc (thalamocortical relay core-type) neuron models.
-*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRc/](file:///home/leo520/pynml/cell_sim/TCRc/) simulations.*
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRc/TCRc_sim_seg0_soma0-v.png" width="100%" alt="TCRc Soma Voltage Trace Low Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRc Soma Voltage Trace Low Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRc/TCRc_sim_seg1_soma0-v.png" width="100%" alt="TCRc Soma Voltage Trace High Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRc Soma Voltage Trace High Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRc/TCRc_sim_seg0_dend0-v.png" width="100%" alt="TCRc Dendrite Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRc Dendrite Voltage Trace</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRc/TCRc_sim_seg0_axon0-v.png" width="100%" alt="TCRc Axon Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRc Axon Voltage Trace</figcaption>
-  </figure>
-</div>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
-  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
-    <img src="./plots/figures/TCRc/TCRc_xy.png" width="100%" alt="TCRc Morphology XY View">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRc Morphology XY View</figcaption>
-  </figure>
-</div>
 
-**Supplementary Figure S2**: Electrophysiological validation of nRTc (nucleus reticularis thalami core-type) interneuron models.
-*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/nRTc/](file:///home/leo520/pynml/cell_sim/nRTc/) simulations.*
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTc/nRTc_sim_seg0_soma0-v.png" width="100%" alt="nRTc Soma Voltage Trace Low Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTc Soma Voltage Trace Low Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTc/nRTc_sim_seg1_soma0-v.png" width="100%" alt="nRTc Soma Voltage Trace High Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTc Soma Voltage Trace High Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTc/nRTc_sim_seg0_dend0-v.png" width="100%" alt="nRTc Dendrite Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTc Dendrite Voltage Trace</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTc/nRTc_sim_seg0_axon0-v.png" width="100%" alt="nRTc Axon Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTc Axon Voltage Trace</figcaption>
-  </figure>
-</div>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
-  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
-    <img src="./plots/figures/nRTc/nRTc_xy.png" width="100%" alt="nRTc Morphology XY View">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTc Morphology XY View</figcaption>
-  </figure>
-</div>
+
+
+
 
 **Matrix Thalamic Nuclei (TCRm/nRTm)**: Matrix-projecting thalamic neurons showed distinct electrophysiological signatures compared to core nuclei, including broader action potentials and more pronounced sag potentials in response to hyperpolarizing currents, consistent with higher H-current expression.
 
@@ -395,59 +347,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 
 </div>
 
-**Supplementary Figure S3**: Electrophysiological validation of TCRm (thalamocortical relay matrix-type) neuron models.
-*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRm/](file:///home/leo520/pynml/cell_sim/TCRm/) simulations.*
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRm/TCRm_sim_seg0_soma0-v.png" width="100%" alt="TCRm Soma Voltage Trace Low Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRm Soma Voltage Trace Low Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRm/TCRm_sim_seg1_soma0-v.png" width="100%" alt="TCRm Soma Voltage Trace High Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRm Soma Voltage Trace High Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRm/TCRm_sim_seg0_dend0-v.png" width="100%" alt="TCRm Dendrite Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRm Dendrite Voltage Trace</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRm/TCRm_sim_seg0_axon0-v.png" width="100%" alt="TCRm Axon Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRm Axon Voltage Trace</figcaption>
-  </figure>
-</div>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
-  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
-    <img src="./plots/figures/TCRm/TCRm_xy.png" width="100%" alt="TCRm Morphology XY View">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRm Morphology XY View</figcaption>
-  </figure>
-</div>
 
-**Supplementary Figure S4**: Electrophysiological validation of nRTm (nucleus reticularis thalami matrix-type) interneuron models.
-*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/nRTm/](file:///home/leo520/pynml/cell_sim/nRTm/) simulations.*
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTm/nRTm_sim_seg0_soma0-v.png" width="100%" alt="nRTm Soma Voltage Trace Low Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTm Soma Voltage Trace Low Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTm/nRTm_sim_seg1_soma0-v.png" width="100%" alt="nRTm Soma Voltage Trace High Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTm Soma Voltage Trace High Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTm/nRTm_sim_seg0_dend0-v.png" width="100%" alt="nRTm Dendrite Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTm Dendrite Voltage Trace</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTm/nRTm_sim_seg0_axon0-v.png" width="100%" alt="nRTm Axon Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTm Axon Voltage Trace</figcaption>
-  </figure>
-</div>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
-  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
-    <img src="./plots/figures/nRTm/nRTm_xy.png" width="100%" alt="nRTm Morphology XY View">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTm Morphology XY View</figcaption>
-  </figure>
-</div>
 
 
 
@@ -503,67 +403,12 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
   </figure>
 </div>
 
-**Supplementary Figure S5**: Electrophysiological validation of TCRil (thalamocortical relay intralaminar-type) neuron models.
-*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRil/](file:///home/leo520/pynml/cell_sim/TCRil/) simulations.*
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRil/TCRil_sim_seg0_soma0-v.png" width="100%" alt="TCRil Soma Voltage Trace Low Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRil Soma Voltage Trace Low Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRil/TCRil_sim_seg1_soma0-v.png" width="100%" alt="TCRil Soma Voltage Trace High Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRil Soma Voltage Trace High Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRil/TCRil_sim_seg0_dend0-v.png" width="100%" alt="TCRil Dendrite Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRil Dendrite Voltage Trace</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/TCRil/TCRil_sim_seg0_axon0-v.png" width="100%" alt="TCRil Axon Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRil Axon Voltage Trace</figcaption>
-  </figure>
-</div>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
-  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
-    <img src="./plots/figures/TCRil/TCRil_xy.png" width="100%" alt="TCRil Morphology XY View">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRil Morphology XY View</figcaption>
-  </figure>
-</div>
 
-**Supplementary Figure S6**: Electrophysiological validation of nRTil (nucleus reticularis thalami intralaminar-type) interneuron models.
-*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/nRTil/](file:///home/leo520/pynml/cell_sim/nRTil/) simulations.*
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTil/nRTil_sim_seg0_soma0-v.png" width="100%" alt="nRTil Soma Voltage Trace Low Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTil Soma Voltage Trace Low Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTil/nRTil_sim_seg1_soma0-v.png" width="100%" alt="nRTil Soma Voltage Trace High Current">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTil Soma Voltage Trace High Current</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTil/nRTil_sim_seg0_dend0-v.png" width="100%" alt="nRTil Dendrite Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTil Dendrite Voltage Trace</figcaption>
-  </figure>
-  <figure style="margin: 0;">
-    <img src="./plots/figures/nRTil/nRTil_sim_seg0_axon0-v.png" width="100%" alt="nRTil Axon Voltage Trace">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTil Axon Voltage Trace</figcaption>
-  </figure>
-</div>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
-  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
-    <img src="./plots/figures/nRTil/nRTil_xy.png" width="100%" alt="nRTil Morphology XY View">
-    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTil Morphology XY View</figcaption>
-  </figure>
-</div>
 
-<div style="text-align:left; margin-top:1rem;">
+
 All thalamic cell models were validated through systematic current-clamp protocols implemented in the `cell_sim/` directory (`00_sim_TCRc.py`, `00_sim_TCRil.py`, `00_sim_TCRm.py`, `00_sim_nRTc.py`, `00_sim_nRTil.py`, `00_sim_nRTm.py`). Electrophysiological validation plots demonstrating characteristic firing patterns, input-output relationships, and voltage responses are provided in the supplementary materials (Supplementary Figures S1-S6).
-</div>
 
-<div style="text-align:left; margin-top:1rem;">
 This comprehensive thalamic model library enabled accurate implementation of driver/modulator distinctions in our thalamocortical connectivity, with core inputs providing strong, reliable transmission to layer 4 cortical neurons, while matrix and intralaminar inputs exhibited more diffuse, modulatory patterns.
-</div>
 
 ### Connectivity Patterns
 
@@ -1092,16 +937,170 @@ All code and analysis scripts used in this study are available from this reposit
 
 ### Supplementary Figures
 
-**Supplementary Figure S1**: Electrophysiological validation of TCRc (thalamocortical relay core-type) neuron models. Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Data generated from [cell_sim/TCRc/](file:///home/leo520/pynml/cell_sim/TCRc/) simulations.
+**Supplementary Figure S1**: Electrophysiological validation of TCRc (thalamocortical relay core-type) neuron models.
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRc/](file:///home/leo520/pynml/cell_sim/TCRc/) simulations.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRc/TCRc_sim_seg0_soma0-v.png" width="100%" alt="TCRc Soma Voltage Trace Low Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRc Soma Voltage Trace Low Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRc/TCRc_sim_seg1_soma0-v.png" width="100%" alt="TCRc Soma Voltage Trace High Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRc Soma Voltage Trace High Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRc/TCRc_sim_seg0_dend0-v.png" width="100%" alt="TCRc Dendrite Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRc Dendrite Voltage Trace</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRc/TCRc_sim_seg0_axon0-v.png" width="100%" alt="TCRc Axon Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRc Axon Voltage Trace</figcaption>
+  </figure>
+</div>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+    <img src="./plots/figures/TCRc/TCRc_xy.png" width="100%" alt="TCRc Morphology XY View">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRc Morphology XY View</figcaption>
+  </figure>
+</div>
 
-**Supplementary Figure S2**: Electrophysiological validation of nRTc (nucleus reticularis thalami core-type) interneuron models. Fast-spiking responses with strong afterhyperpolarization following current injection protocols. Data generated from [cell_sim/nRTc/](file:///home/leo520/pynml/cell_sim/nRTc/) simulations.
-**Supplementary Figure S3**: Electrophysiological validation of TCRm (thalamocortical relay matrix-type) neuron models. Broader action potentials and pronounced sag potentials indicating higher H-current expression. Data generated from [cell_sim/TCRm/](file:///home/leo520/pynml/cell_sim/TCRm/) simulations.
+**Supplementary Figure S2**: Electrophysiological validation of nRTc (nucleus reticularis thalami core-type) interneuron models.
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/nRTc/](file:///home/leo520/pynml/cell_sim/nRTc/) simulations.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTc/nRTc_sim_seg0_soma0-v.png" width="100%" alt="nRTc Soma Voltage Trace Low Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTc Soma Voltage Trace Low Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTc/nRTc_sim_seg1_soma0-v.png" width="100%" alt="nRTc Soma Voltage Trace High Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTc Soma Voltage Trace High Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTc/nRTc_sim_seg0_dend0-v.png" width="100%" alt="nRTc Dendrite Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTc Dendrite Voltage Trace</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTc/nRTc_sim_seg0_axon0-v.png" width="100%" alt="nRTc Axon Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTc Axon Voltage Trace</figcaption>
+  </figure>
+</div>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+    <img src="./plots/figures/nRTc/nRTc_xy.png" width="100%" alt="nRTc Morphology XY View">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTc Morphology XY View</figcaption>
+  </figure>
+</div>
 
-**Supplementary Figure S4**: Electrophysiological validation of nRTm (nucleus reticularis thalami matrix-type) interneuron models. Intermediate firing properties between core and intralaminar types. Data generated from [cell_sim/nRTm/](file:///home/leo520/pynml/cell_sim/nRTm/) simulations.
+**Supplementary Figure S3**: Electrophysiological validation of TCRm (thalamocortical relay matrix-type) neuron models.
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRm/](file:///home/leo520/pynml/cell_sim/TCRm/) simulations.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRm/TCRm_sim_seg0_soma0-v.png" width="100%" alt="TCRm Soma Voltage Trace Low Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRm Soma Voltage Trace Low Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRm/TCRm_sim_seg1_soma0-v.png" width="100%" alt="TCRm Soma Voltage Trace High Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRm Soma Voltage Trace High Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRm/TCRm_sim_seg0_dend0-v.png" width="100%" alt="TCRm Dendrite Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRm Dendrite Voltage Trace</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRm/TCRm_sim_seg0_axon0-v.png" width="100%" alt="TCRm Axon Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRm Axon Voltage Trace</figcaption>
+  </figure>
+</div>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+    <img src="./plots/figures/TCRm/TCRm_xy.png" width="100%" alt="TCRm Morphology XY View">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRm Morphology XY View</figcaption>
+  </figure>
+</div>
 
-**Supplementary Figure S5**: Electrophysiological validation of TCRil (thalamocortical relay intralaminar-type) neuron models. Moderate burst capabilities with unique adaptation patterns during sustained depolarization. Data generated from [cell_sim/TCRil/](file:///home/leo520/pynml/cell_sim/TCRil/) simulations.
 
-**Supplementary Figure S6**: Electrophysiological validation of nRTil (nucleus reticularis thalami intralaminar-type) interneuron models. Distinctive firing patterns characteristic of intralaminar thalamic nuclei. Data generated from [cell_sim/nRTil/](file:///home/leo520/pynml/cell_sim/nRTil/) simulations.
+**Supplementary Figure S4**: Electrophysiological validation of nRTm (nucleus reticularis thalami matrix-type) interneuron models.
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/nRTm/](file:///home/leo520/pynml/cell_sim/nRTm/) simulations.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTm/nRTm_sim_seg0_soma0-v.png" width="100%" alt="nRTm Soma Voltage Trace Low Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTm Soma Voltage Trace Low Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTm/nRTm_sim_seg1_soma0-v.png" width="100%" alt="nRTm Soma Voltage Trace High Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTm Soma Voltage Trace High Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTm/nRTm_sim_seg0_dend0-v.png" width="100%" alt="nRTm Dendrite Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTm Dendrite Voltage Trace</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTm/nRTm_sim_seg0_axon0-v.png" width="100%" alt="nRTm Axon Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTm Axon Voltage Trace</figcaption>
+  </figure>
+</div>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+    <img src="./plots/figures/nRTm/nRTm_xy.png" width="100%" alt="nRTm Morphology XY View">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTm Morphology XY View</figcaption>
+  </figure>
+</div>
+
+
+**Supplementary Figure S5**: Electrophysiological validation of TCRil (thalamocortical relay intralaminar-type) neuron models.
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/TCRil/](file:///home/leo520/pynml/cell_sim/TCRil/) simulations.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRil/TCRil_sim_seg0_soma0-v.png" width="100%" alt="TCRil Soma Voltage Trace Low Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) TCRil Soma Voltage Trace Low Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRil/TCRil_sim_seg1_soma0-v.png" width="100%" alt="TCRil Soma Voltage Trace High Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) TCRil Soma Voltage Trace High Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRil/TCRil_sim_seg0_dend0-v.png" width="100%" alt="TCRil Dendrite Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) TCRil Dendrite Voltage Trace</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/TCRil/TCRil_sim_seg0_axon0-v.png" width="100%" alt="TCRil Axon Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) TCRil Axon Voltage Trace</figcaption>
+  </figure>
+</div>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+    <img src="./plots/figures/TCRil/TCRil_xy.png" width="100%" alt="TCRil Morphology XY View">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) TCRil Morphology XY View</figcaption>
+  </figure>
+</div>
+
+**Supplementary Figure S6**: Electrophysiological validation of nRTil (nucleus reticularis thalami intralaminar-type) interneuron models.
+*Current-clamp responses to step current injections demonstrating characteristic low-threshold calcium spikes (LTS) and burst firing patterns. Top row shows somatic voltage responses at two current amplitudes, middle row displays dendritic and axonal voltage propagation, and bottom shows morphological reconstruction in XY plane. Data generated from [cell_sim/nRTil/](file:///home/leo520/pynml/cell_sim/nRTil/) simulations.*
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTil/nRTil_sim_seg0_soma0-v.png" width="100%" alt="nRTil Soma Voltage Trace Low Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(A) nRTil Soma Voltage Trace Low Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTil/nRTil_sim_seg1_soma0-v.png" width="100%" alt="nRTil Soma Voltage Trace High Current">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(B) nRTil Soma Voltage Trace High Current</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTil/nRTil_sim_seg0_dend0-v.png" width="100%" alt="nRTil Dendrite Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(C) nRTil Dendrite Voltage Trace</figcaption>
+  </figure>
+  <figure style="margin: 0;">
+    <img src="./plots/figures/nRTil/nRTil_sim_seg0_axon0-v.png" width="100%" alt="nRTil Axon Voltage Trace">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(D) nRTil Axon Voltage Trace</figcaption>
+  </figure>
+</div>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
+  <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
+    <img src="./plots/figures/nRTil/nRTil_xy.png" width="100%" alt="nRTil Morphology XY View">
+    <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(E) nRTil Morphology XY View</figcaption>
+  </figure>
+</div>
+
 
 All supplementary figures are available in the [plots/](file:///home/leo520/pynml/plots/) directory and can be accessed through the interactive index at [plots/index.html](file:///home/leo520/pynml/plots/index.html).
 
