@@ -18,8 +18,8 @@ build:
     # Copy MyST build output to Read the Docs expected location
     - cp -r _build/html/. $READTHEDOCS_OUTPUT/html/
     # Copy static files that MyST doesn't automatically include
+    # These directories contain key visualization results for the paper and must be preserved
     - cp -r plots/ $READTHEDOCS_OUTPUT/html/
     - cp -r html/ $READTHEDOCS_OUTPUT/html/
-    - cp -r cell_sim/ $READTHEDOCS_OUTPUT/html/
     # Clean up build artifacts to avoid unsupported output path warnings
     - rm -rf _build
