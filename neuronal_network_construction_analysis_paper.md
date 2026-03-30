@@ -280,14 +280,10 @@ A critical component of our pipeline was the development and validation of bioph
     <figcaption style="text-align:left; font-size:0.9em; margin-top:0.5rem;">(F) nRTc voltage traces showing characteristic firing patterns.</figcaption>
   </figure>
 </div>
+</div>
 
 
 Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) interneuron models. Fast-spiking responses with strong afterhyperpolarization following current injection protocols. Data generated from [cell_sim/](file:///home/leo520/pynml/cell_sim/TCRc/, file:///home/leo520/pynml/cell_sim/nRTc/) simulations.
-
-
-
-
-
 
 **Matrix Thalamic Nuclei (TCRm/nRTm)**: Matrix-projecting thalamic neurons showed distinct electrophysiological signatures compared to core nuclei, including broader action potentials and more pronounced sag potentials in response to hyperpolarizing currents, consistent with higher H-current expression.
 
@@ -312,6 +308,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 </div>
 
 *Left: Input-frequency relationship for TCRm neurons showing broader action potentials and higher H-current expression. Right: Current-voltage relationship demonstrating pronounced sag potentials in response to hyperpolarizing currents.*
+
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
   <img src="./plots/figures/TCRm/TCRm_voltage_traces.png" style="width:100%; height:auto; display:block;" alt="TCRm Voltage Traces" >
@@ -321,6 +318,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 </div>
 
 *Representative voltage traces from TCRm neurons showing characteristic matrix-type responses with broader action potentials and enhanced sag potentials indicating higher H-current (Ih) expression.*
+
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0;">
   <figure style="margin: 0;">
   <img src="./plots/figures/nRTm/nRTm_if.png" alt="nRTm Input-Frequency Relationship" style="width:100%; height:auto; display:block;">
@@ -335,6 +333,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 </div>
 
 *Left: Input-frequency relationship for nRTm interneurons displaying intermediate firing properties between core and intralaminar types. Right: Current-voltage relationship showing distinct electrophysiological signatures characteristic of matrix-projecting thalamic interneurons.*
+
 <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1rem;">
   <figure style="flex:1 1 45%; min-width:280px; max-width:700px; margin:0;">
   <img src="./plots/figures/nRTm/nRTm_voltage_traces.png" style="width:100%; height:auto; display:block;" alt="nRTm Voltage Traces" >
@@ -344,12 +343,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
 </div>
 
 *Representative voltage traces from nRTm interneurons demonstrating intermediate properties with unique adaptation patterns during sustained depolarization.*
-
 </div>
-
-
-
-
 
 **Intralaminar Thalamic Nuclei (TCRil/nRTil)**: Intralaminar neurons displayed intermediate properties between core and matrix types, with moderate burst capabilities and unique adaptation patterns during sustained depolarization.
 
@@ -403,7 +397,7 @@ Electrophysiological validation of nucleus reticularis thalami core (nRTC,TCRc) 
   </figure>
 </div>
 
-
+</div>
 
 
 All thalamic cell models were validated through systematic current-clamp protocols implemented in the `cell_sim/` directory (`00_sim_TCRc.py`, `00_sim_TCRil.py`, `00_sim_TCRm.py`, `00_sim_nRTc.py`, `00_sim_nRTil.py`, `00_sim_nRTm.py`). Electrophysiological validation plots demonstrating characteristic firing patterns, input-output relationships, and voltage responses are provided in the supplementary materials (Supplementary Figures S1-S6).
